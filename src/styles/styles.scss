@@ -28,14 +28,14 @@ body {
 	min-height: 100dvh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
-	/* text-rendering: optimizeLegibility; */
+	// text-rendering: optimizeLegibility;
 	font-synthesis: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 	line-height: 1.5;
 	font-weight: 400;
-	/* min-width: 300px; */
+	min-width: 300px;
 	font-family: 'Circe', 'Circe Bold', Inter, system-ui, Arial, sans-serif;
 }
 ul[class],
