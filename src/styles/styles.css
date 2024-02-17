@@ -76,22 +76,26 @@ select {
   }
 }
 :root {
-  --color-white: #fff;
-  --color-black: #000;
-  --color-gray: #3b3b3b;
-  --color-gray-light: #5d5d5d;
-  --color-gray-lightest: #c4c4c4;
-  --color-gray-lightest-2: #f9f7f6;
-  --color-red-darkest: #541f42;
-  --color-red-dark: #780713;
-  --color-red: #be1622;
-  --color-red-light: #e783c5;
-  --color-red-lightest: #efa1ac;
-  --color-red-lightest-2: #ed99b4;
-  --text-color: var(--color-black);
+  --c-white: #fff;
+  --c-black: #000;
+  --c-gray: #3b3b3b;
+  --c-gray-light: #5d5d5d;
+  --c-gray-lightest: #c4c4c4;
+  --c-gray-lightest-2: #f9f7f6;
+  --c-primary: #be1622;
+  --c-primary-dark: #780713;
+  --c-primary-darkest: #541f42;
+  --c-secondary: #e783c5;
+  --c-secondary-light: #ed99b4;
+  --c-secondary-lightest: #efa1ac;
+  --text-color: var(--c-black);
 }
 
 body {
-  background-color: var(--color-white);
+  background-color: var(--c-white);
   color: var(--text-color);
+}
+
+.header {
+  background-color: var(--c-white);
 }/*# sourceMappingURL=styles.css.map */
