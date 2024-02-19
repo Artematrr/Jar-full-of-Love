@@ -24,9 +24,10 @@
 	--c-bg: var(--c-white);
 }
 
+// Common
+
 body {
 	font-family: 'Gilroy';
-
 	background-color: var(--c-bg);
 	color: var(--c-text);
 }
@@ -39,6 +40,8 @@ a {
 		color: var(--c-primary-700, #780713);
 	}
 }
+
+// Header
 
 .header {
 	position: relative;
@@ -268,6 +271,8 @@ a {
 	}
 }
 
+// Footer
+
 .footer {
 	color: var(--c-white, #fff);
 	background: var(--c-primary-700, #780713);
@@ -277,8 +282,6 @@ a {
 		text-align: center;
 	}
 }
-
-
 
 /* Preset */
 /* @media screen and (max-width: 1200px) {
