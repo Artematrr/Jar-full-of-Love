@@ -182,15 +182,6 @@ a {
 	}
 }
 
-.header:has(.header__burger-checkbox:checked) .header__mobile {
-	display: flex;
-	align-self: flex-start;
-}
-
-.header__burger-checkbox:checked {
-	background-image: url('/public/img//icons/close.svg');
-}
-
 @media screen and (max-width: 992px) {
 	.header__logo-image {
 		display: none;
@@ -225,6 +216,11 @@ a {
 	.header__social {
 		display: none;
 	}
+}
+
+.header:has(.header__burger-checkbox:checked) .header__mobile {
+	display: flex;
+	align-self: flex-start;
 }
 
 .header__mobile {
@@ -263,6 +259,16 @@ a {
 			flex-direction: column;
 			align-items: flex-start;
 		}
+	}
+}
+
+.footer {
+	color: var(--c-white, #fff);
+	background: var(--c-primary-700, #780713);
+
+	&__inner {
+		padding: 40px 10px;
+		text-align: center;
 	}
 }
 
