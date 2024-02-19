@@ -15,7 +15,7 @@ const Header = () => {
 					<div className='header__logo-image'>
 						<img src='img/logo.svg' alt='Банка полная любви' />
 					</div>
-					<div className='header__logo-title'>Банка полная любви</div>
+					<h1 className='header__logo-title'>Банка полная любви</h1>
 				</a>
 
 				<nav className='header__nav'>
