@@ -339,6 +339,13 @@ a:hover {
   color: var(--c-primary-700, #780713);
 }
 
+.container {
+  max-width: 1410px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -391,7 +398,7 @@ a:hover {
 .header__logo-title {
   color: var(--c-gray-700, #3b3b3b);
   font-family: "Allegretto Script One", serif;
-  font-size: clamp(32px, 4vw, 48px);
+  font-size: clamp(34px, 4vw, 48px);
   font-style: italic;
   font-weight: 400;
   line-height: 30px;
@@ -474,11 +481,6 @@ a:hover {
     gap: 10px;
   }
 }
-@media screen and (min-width: 769px) {
-  .header__mobile {
-    display: none !important;
-  }
-}
 @media screen and (max-width: 768px) {
   .header__burger {
     display: flex;
@@ -539,6 +541,11 @@ a:hover {
   align-items: flex-start;
 }
 
+@media screen and (min-width: 769px) {
+  .header__mobile {
+    display: none !important;
+  }
+}
 .footer {
   color: var(--c-white, #fff);
   background: var(--c-primary-700, #780713);
