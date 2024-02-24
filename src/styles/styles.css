@@ -398,7 +398,7 @@ a:hover {
 .header__logo-title {
   color: var(--c-gray-700, #3b3b3b);
   font-family: "Allegretto Script One", serif;
-  font-size: clamp(34px, 4vw, 48px);
+  font-size: clamp(34px, 3vw, 44px);
   font-style: italic;
   font-weight: 400;
   line-height: 30px;
@@ -442,6 +442,7 @@ a:hover {
   font-weight: 700;
   line-height: 125%;
   text-align: center;
+  white-space: nowrap;
 }
 .header__tel-number a {
   color: var(--c-primary-500, #be1622);
@@ -480,19 +481,19 @@ a:hover {
   .header__social {
     gap: 10px;
   }
+  .header__tel-link {
+    display: flex;
+  }
+  .header__tel-number,
+  .header__tel-subtitle {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__burger {
     display: flex;
   }
   .header__nav {
-    display: none;
-  }
-  .header__tel-link {
-    display: flex;
-  }
-  .header__tel-number,
-  .header__tel-subtitle {
     display: none;
   }
 }
