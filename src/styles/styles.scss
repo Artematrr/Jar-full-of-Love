@@ -104,7 +104,10 @@ a {
 // Header
 
 .header {
-	position: relative;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
