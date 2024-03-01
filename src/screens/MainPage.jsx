@@ -31,6 +31,85 @@ const MainPage = () => {
 
 			<section className='catalog container' id='catalog'>
 				<h2 className='catalog__title'>Каталог</h2>
+				<div className='catalog__list'>
+					<div className='catalog__item'>
+						<div className='catalog__item-image'>
+							<img
+								src='img/catalog-1.png'
+								alt='101 Валентинка для неё'
+								loading='lazy'
+							/>
+						</div>
+						<div className='catalog__item-info'>
+							<h3 className='catalog__item-title'>101 Валентинка для неё</h3>
+							<div className='catalog__item-bottom'>
+								<div className='catalog__item-price'>
+									<div className='price-old'>
+										1000 <span>₽</span>
+									</div>
+									<div className='price-new'>
+										1000 <span>₽</span>
+									</div>
+								</div>
+								<button className='catalog__item-button button button-fill'>
+									Заказать
+								</button>
+							</div>
+						</div>
+					</div>
+					<div className='catalog__item'>
+						<div className='catalog__item-image'>
+							<img
+								src='img/catalog-2.png'
+								alt='101 Валентинка для Подруги'
+								loading='lazy'
+							/>
+						</div>
+						<div className='catalog__item-info'>
+							<h3 className='catalog__item-title'>
+								101 Валентинка для Подруги
+							</h3>
+							<div className='catalog__item-bottom'>
+								<div className='catalog__item-price'>
+									<div className='price-old'>
+										1000 <span>₽</span>
+									</div>
+									<div className='price-new'>
+										1000 <span>₽</span>
+									</div>
+								</div>
+								<button className='catalog__item-button button button-fill'>
+									Заказать
+								</button>
+							</div>
+						</div>
+					</div>
+					<div className='catalog__item'>
+						<div className='catalog__item-image'>
+							<img
+								src='img/catalog-3.png'
+								alt='101 Валентинка для него'
+								loading='lazy'
+							/>
+						</div>
+						<div className='catalog__item-info'>
+							<h3 className='catalog__item-title'>101 Валентинка для него</h3>
+							<div className='catalog__item-bottom'>
+								<div className='catalog__item-price'>
+									<div className='price-old'>
+										1000 <span>₽</span>
+									</div>
+									<div className='price-new'>
+										1000 <span>₽</span>
+									</div>
+								</div>
+								<button className='catalog__item-button button button-fill'>
+									Заказать
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section className='form container' id='form'>
