@@ -149,6 +149,24 @@ const MainPage = () => {
 					</p>
 				</div>
 			</section>
+			<section className='cards container'>
+				<a href='#' className='cards__item'>
+					<img src='img/cards-delivery.png' alt='Доставка' loading='lazy' />
+				</a>
+				<a href='#' className='cards__item'>
+					<img src='img/cards-pay.png' alt='Оплата' loading='lazy' />
+				</a>
+				<a href='#' className='cards__item'>
+					<img src='img/cards-discount.png' alt='Акции' loading='lazy' />
+				</a>
+				<a href='#' className='cards__item'>
+					<img
+						src='img/cards-promotion.png'
+						alt='Выгодные скидки'
+						loading='lazy'
+					/>
+				</a>
+			</section>
 
 			<section className='reviews container' id='reviews'>
 				<h2 className='reviews__title'>Отзывы</h2>

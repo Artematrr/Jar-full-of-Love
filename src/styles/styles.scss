@@ -716,6 +716,29 @@ ul.list-custom {
 		}
 	}
 }
+
+// Cards
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	// align-items: center;
+	column-gap: 30px;
+	row-gap: 90px;
+
+	&__item {
+		max-width: 690px;
+		max-height: 494px;
+		border-radius: 15px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cards {
+		grid-template-columns: 1fr;
+		row-gap: 30px;
+	}
+}
+
 /* Preset */
 /* @media screen and (max-width: 1200px) {
 }
