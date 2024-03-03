@@ -117,7 +117,55 @@ const MainPage = () => {
 			</section>
 
 			<section className='advantages container' id='advantages'>
-				<h2 className='advantages__title'>Почему мы?</h2>
+				<div className='advantages__image'>
+					<img src='img/advantages-image.png' alt='Почему мы?' loading='lazy' />
+				</div>
+				<div className='advantages__info'>
+					<h2 className='advantages__title'>Почему мы?</h2>
+					<ul className='advantages__list'>
+						<li className='advantages__item'>
+							<h3 className='advantages__item-title'>Производство</h3>
+							<p className='advantages__item-description'>
+								У нас собственное производство. Каждая баночка собирается в
+								ручную с любовью
+							</p>
+						</li>
+						<li className='advantages__item'>
+							<h3 className='advantages__item-title'>Качество</h3>
+							<p className='advantages__item-description'>
+								Высокий контроль качества на каждом этапе
+							</p>
+						</li>
+						<li className='advantages__item'>
+							<h3 className='advantages__item-title'>Безопасность</h3>
+							<p className='advantages__item-description'>
+								Используем качественные и безопасные материалы
+							</p>
+						</li>
+					</ul>
+					<p className='advantages__description'>
+						Благодарим вас за покупку, наша команда с искренней любовью,
+						аккуратностью, внимательностью собирает ваш заказ.
+					</p>
+				</div>
+			</section>
+			<section className='cards container'>
+				<a href='#' className='cards__item'>
+					<img src='img/cards-delivery.png' alt='Доставка' loading='lazy' />
+				</a>
+				<a href='#' className='cards__item'>
+					<img src='img/cards-pay.png' alt='Оплата' loading='lazy' />
+				</a>
+				<a href='#' className='cards__item'>
+					<img src='img/cards-discount.png' alt='Акции' loading='lazy' />
+				</a>
+				<a href='#' className='cards__item'>
+					<img
+						src='img/cards-promotion.png'
+						alt='Выгодные скидки'
+						loading='lazy'
+					/>
+				</a>
 			</section>
 
 			<section className='reviews container' id='reviews'>
@@ -126,6 +174,17 @@ const MainPage = () => {
 
 			<section className='delivery container' id='delivery'>
 				<h2 className='delivery__title'>Мы продаем на</h2>
+				<div className='delivery__items'>
+					<div className='delivery__item'>
+						<img src='img/ozon.png' alt='Ozon' />
+					</div>
+					<div className='delivery__item'>
+						<img src='img/wildberries.png' alt='Wildberries' />
+					</div>
+					<div className='delivery__item'>
+						<img src='img/yandex-market.png' alt='Yandex-market' />
+					</div>
+				</div>
 			</section>
 		</main>
 	)
