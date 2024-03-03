@@ -909,6 +909,31 @@ ul.list-custom li::before {
     row-gap: 30px;
   }
 }
+.delivery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.delivery__title {
+  color: var(--c-secondary-700);
+  font-size: clamp(25px, 6vw, 50px);
+  font-weight: 700;
+  line-height: 105%;
+}
+.delivery__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  gap: 30px;
+}
+.delivery__item {
+  padding: 10px;
+}
+
 /* Preset */
 /* @media screen and (max-width: 1200px) {
 }

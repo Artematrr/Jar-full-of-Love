@@ -174,6 +174,17 @@ const MainPage = () => {
 
 			<section className='delivery container' id='delivery'>
 				<h2 className='delivery__title'>Мы продаем на</h2>
+				<div className='delivery__items'>
+					<div className='delivery__item'>
+						<img src='img/ozon.png' alt='Ozon' />
+					</div>
+					<div className='delivery__item'>
+						<img src='img/wildberries.png' alt='Wildberries' />
+					</div>
+					<div className='delivery__item'>
+						<img src='img/yandex-market.png' alt='Yandex-market' />
+					</div>
+				</div>
 			</section>
 		</main>
 	)
