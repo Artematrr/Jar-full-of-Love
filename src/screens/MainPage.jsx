@@ -255,6 +255,19 @@ const MainPage = () => {
 
 			<section className='reviews container' id='reviews'>
 				<h2 className='reviews__title'>Отзывы</h2>
+				<div className='reviews__items'>
+					<div className='reviews__item'>
+						<div className='reviews__item-left'>
+							<div className='reviews__item-stars'></div>
+							<div className='reviews__item-author'></div>
+							<div className='reviews__item-comment'></div>
+						</div>
+						<div className='reviews__item-right'>
+							<div className='reviews__item-name'></div>
+							<div className='reviews__item-swiper'></div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section className='delivery container' id='delivery'>
