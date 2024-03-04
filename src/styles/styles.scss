@@ -625,7 +625,106 @@ ul.list-custom {
 	}
 }
 
+// Form
+
+.form {
+	color: var(--c-white);
+	width: 100%;
+	display: flex;
+	padding: 90px 35px;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	background: url('/img/form-bg.png') center no-repeat;
+	background-size: cover;
+
+	&__left {
+		max-width: 40%;
+	}
+
+	&__right {
+		max-width: 60%;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	&__title {
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 105%;
+
+		&-accent {
+			font-size: 60px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 145%;
+	}
+
+	&__group {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+
+		.form__group {
+
+			&-privacy {
+				max-width: 400px;
+			}
+		}
+
+		&-checkboxes {
+			flex-direction: column;
+		}
+	}
+
+	&__label {
+	}
+
+	&__dropdown {
+	}
+
+	&__checkbox {
+	}
+
+	&__input {
+	}
+
+	&__button {
+		background: var(--c-white);
+		color: var(--c-primary-500);
+
+		&:hover {
+			color: var(--c-primary-500);
+		}
+		&::before {
+			background-image: url('/img/icons/heart-form.svg');
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.form {
+		flex-direction: column;
+		background: url('/img/form-bg-mobile.png') center no-repeat;
+		background-size: cover;
+
+		&__right {
+			max-width: 100%;
+		}
+
+		&__left {
+			max-width: 100%;
+		}
+	}
+}
+
 // Advantages
+
 .advantages {
 	display: flex;
 	align-items: center;
@@ -718,6 +817,7 @@ ul.list-custom {
 }
 
 // Cards
+
 .cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr;

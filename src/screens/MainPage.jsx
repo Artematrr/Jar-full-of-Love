@@ -112,8 +112,92 @@ const MainPage = () => {
 				</div>
 			</section>
 
-			<section className='form container' id='form'>
-				<h2 className='form__title'>Собери свою Банку любви</h2>
+			<section className='form' id='form'>
+				{/* <div className="form__inner container" ></div> */}
+				<div className='form__left'>
+					<h2 className='form__title'>
+						Собери свою <br />
+						<span className='form__title-accent'>Банку любви</span>
+					</h2>
+					<h3 className='form__subtitle'>
+						соберем для вас индивидуально с вашим участием
+					</h3>
+				</div>
+				<form action='POST' className='form__right'>
+					<div className='form__group'>
+						<label className='form__label'>Для кого</label>
+						<select className='form__dropdown'>
+							<option value='Для любимой'>Для любимой</option>
+							<option value='Для подруги'>Для подруги</option>
+							<option value='Для любимого'>Для любимого</option>
+						</select>
+					</div>
+					<div className='form__group'>
+						<label className='form__label'>На какой праздник</label>
+						<select className='form__dropdown'>
+							<option value='День влюбленных'>День влюбленных</option>
+							<option value='Восьмое марта'>Восьмое марта</option>
+						</select>
+					</div>
+					<div className='form__group form__group-checkboxes'>
+						<div className='form__group'>
+							<input
+								type='checkbox'
+								name='my-choice'
+								className='form__checkbox'
+							/>
+							<label htmlFor='my-choice' className='form__label'>
+								Валентинки напишу сам
+							</label>
+						</div>
+						<div className='form__group '>
+							<input
+								type='checkbox'
+								name='your-choice'
+								className='form__checkbox'
+							/>
+							<label htmlFor='your-choice' className='form__label'>
+								Прислать мне валентинки на выбор
+							</label>
+						</div>
+					</div>
+					<div className='form__group'>
+						<label htmlFor='name' className='form__label'>
+							Имя
+						</label>
+						<input type='text' name='name' className='form__input' />
+					</div>
+
+					<div className='form__group'>
+						<div className='form__group'>
+							<label htmlFor='tel' className='form__label'>
+								Телефон
+							</label>
+							<input type='text' name='tel' className='form__input' />
+						</div>
+						<div className='form__group'>
+							<label htmlFor='email' className='form__label'>
+								Email
+							</label>
+							<input type='email' name='email' className='form__input' />
+						</div>
+					</div>
+					<div className='form__group'>
+						<div className='form__group form__group-privacy'>
+							<input
+								type='checkbox'
+								name='privacy'
+								className='form__checkbox'
+							/>
+							<label htmlFor='privacy' className='form__label'>
+								Нажимая на кнопку даю согласие на обработку Персональных данных
+							</label>
+						</div>
+						<button type='submit' className='form__button button button-fill'>
+							Заказать
+						</button>
+					</div>
+				</form>
 			</section>
 
 			<section className='advantages container' id='advantages'>
@@ -149,6 +233,7 @@ const MainPage = () => {
 					</p>
 				</div>
 			</section>
+
 			<section className='cards container'>
 				<a href='#' className='cards__item'>
 					<img src='img/cards-delivery.png' alt='Доставка' loading='lazy' />
