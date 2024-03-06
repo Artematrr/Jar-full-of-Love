@@ -145,7 +145,7 @@ input[type='checkbox']:not(:checked) + label::after {
 }
 input[type='checkbox']:checked + label::after,
 input[type='checkbox']:not(:checked) + label::after {
-	content: url('img/icons/selected.svg');
+	content: url('/img/icons/selected.svg');
 	left: 0px;
 	top: 0px;
 	width: 24px;
@@ -164,13 +164,78 @@ input[type='checkbox']:focus-visible + label::before {
 	outline: 2px solid var(--white);
 }
 
-// Main
-
 .main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 90px;
+}
+
+// Overlay
+
+.overlay {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	z-index: 2;
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		padding: 10px;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	&__cart {
+		position: relative;
+		background: var(--primary-500);
+
+		&-image {
+			position: relative;
+			top: 5px;
+			left: -8px;
+		}
+		&-count {
+			position: absolute;
+			top: 18px;
+			right: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 34px;
+			height: 34px;
+			padding: 10px 10px 6px 10px;
+			color: var(--black);
+			background: var(--white);
+			border: 2px solid var(--primary-500);
+			border-radius: 500px;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: normal;
+		}
+	}
+
+	&__scroll-top {
+		opacity: 0;
+		background: var(--Linear);
+		transition: opacity 0.3s ease-in-out;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.overlay {
+		bottom: 0px;
+		right: 10px;
+		scale: 0.6;
+	}
 }
 
 // Header
@@ -535,6 +600,7 @@ input[type='checkbox']:focus-visible + label::before {
 }
 
 // Catalog
+
 .catalog {
 	display: flex;
 	flex-direction: column;
@@ -695,11 +761,11 @@ input[type='checkbox']:focus-visible + label::before {
 	background-size: cover;
 
 	&__left {
-		max-width: 40%;
+		max-width: 30%;
 	}
 
 	&__right {
-		max-width: 60%;
+		max-width: 70%;
 		display: flex;
 		flex-direction: column;
 		gap: 25px;
@@ -753,7 +819,7 @@ input[type='checkbox']:focus-visible + label::before {
 	}
 
 	&__label {
-		font-size: 20px;
+		font-size: clamp(16px, 3vw, 20px);
 		font-weight: 400;
 		line-height: 125%;
 		letter-spacing: 0.6px;
@@ -778,7 +844,7 @@ input[type='checkbox']:focus-visible + label::before {
 			position: relative;
 
 			&::after {
-				content: url('/public/img/icons/triangle-white.svg');
+				content: url('/img/icons/triangle-white.svg');
 				display: inline-block;
 				position: relative;
 				right: 0;
@@ -792,7 +858,7 @@ input[type='checkbox']:focus-visible + label::before {
 				color: var(--primary-500);
 
 				&::after {
-					content: url('/public/img/icons/triangle-red.svg');
+					content: url('/img/icons/triangle-red.svg');
 				}
 			}
 		}
@@ -863,6 +929,7 @@ input[type='checkbox']:focus-visible + label::before {
 		width: 95px;
 	}
 }
+
 @media screen and (max-width: 768px) {
 	.form {
 		flex-direction: column;
@@ -884,9 +951,14 @@ input[type='checkbox']:focus-visible + label::before {
 			&-submit {
 				justify-content: center;
 			}
+
+			&-privacy {
+				text-align: center;
+			}
 		}
 	}
 }
+
 @media screen and (max-width: 480px) {
 	.form {
 		padding: 55px 15px;
@@ -995,7 +1067,6 @@ input[type='checkbox']:focus-visible + label::before {
 .cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	// align-items: center;
 	column-gap: 30px;
 	row-gap: 90px;
 
@@ -1014,6 +1085,7 @@ input[type='checkbox']:focus-visible + label::before {
 }
 
 // Delivery
+
 .delivery {
 	display: flex;
 	flex-wrap: wrap;

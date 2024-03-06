@@ -420,7 +420,7 @@ input[type=checkbox]:not(:checked) + label::after {
 
 input[type=checkbox]:checked + label::after,
 input[type=checkbox]:not(:checked) + label::after {
-  content: url("img/icons/selected.svg");
+  content: url("/img/icons/selected.svg");
   left: 0px;
   top: 0px;
   width: 24px;
@@ -450,6 +450,66 @@ input[type=checkbox]:focus-visible + label::before {
   gap: 90px;
 }
 
+.overlay {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 2;
+}
+.overlay__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.overlay__cart {
+  position: relative;
+  background: var(--primary-500);
+}
+.overlay__cart-image {
+  position: relative;
+  top: 5px;
+  left: -8px;
+}
+.overlay__cart-count {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 10px 10px 6px 10px;
+  color: var(--black);
+  background: var(--white);
+  border: 2px solid var(--primary-500);
+  border-radius: 500px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+.overlay__scroll-top {
+  opacity: 0;
+  background: var(--Linear);
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .overlay {
+    bottom: 0px;
+    right: 10px;
+    scale: 0.6;
+  }
+}
 .header {
   position: sticky;
   top: 0;
@@ -871,10 +931,10 @@ input[type=checkbox]:focus-visible + label::before {
   background-size: cover;
 }
 .form__left {
-  max-width: 40%;
+  max-width: 30%;
 }
 .form__right {
-  max-width: 60%;
+  max-width: 70%;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -916,7 +976,7 @@ input[type=checkbox]:focus-visible + label::before {
   align-items: flex-start;
 }
 .form__label {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   font-weight: 400;
   line-height: 125%;
   letter-spacing: 0.6px;
@@ -938,7 +998,7 @@ input[type=checkbox]:focus-visible + label::before {
   position: relative;
 }
 .form__dropdown-selected-item::after {
-  content: url("/public/img/icons/triangle-white.svg");
+  content: url("/img/icons/triangle-white.svg");
   display: inline-block;
   position: relative;
   right: 0;
@@ -951,7 +1011,7 @@ input[type=checkbox]:focus-visible + label::before {
   color: var(--primary-500);
 }
 .form__dropdown-selected-item.active::after {
-  content: url("/public/img/icons/triangle-red.svg");
+  content: url("/img/icons/triangle-red.svg");
 }
 .form__dropdown-list {
   display: none;
@@ -1029,6 +1089,9 @@ input[type=checkbox]:focus-visible + label::before {
   }
   .form__group-submit {
     justify-content: center;
+  }
+  .form__group-privacy {
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
