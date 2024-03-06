@@ -29,6 +29,19 @@ const MainPage = () => {
 				</div>
 			</section>
 
+			<div className='overlay'>
+				<a className='overlay__cart overlay__button'>
+					<div className='overlay__cart-image'>
+						<img src='img/icons/cart.svg' alt='Корзина' />
+					</div>
+
+					<span className='overlay__cart-count'>0</span>
+				</a>
+				<a className='overlay__scroll-top overlay__button' id='scroll-top'>
+					<img src='img/icons/triangle-red-up.svg' alt='Наверх' />
+				</a>
+			</div>
+
 			<section className='catalog container' id='catalog'>
 				<h2 className='catalog__title'>Каталог</h2>
 				<div className='catalog__list'>

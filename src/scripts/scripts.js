@@ -37,4 +37,18 @@ window.onload = function () {
 		'holiday-list',
 		'holiday-selected-value'
 	)
+
+	const scrollTop = document.getElementById('scroll-top')
+
+	scrollTop.addEventListener('click', function () {
+		window.scrollTo({ top: 0, behavior: 'smooth' })
+	})
+
+	window.addEventListener('scroll', function () {
+		if (window.scrollY > 300) {
+			scrollTop.style.opacity = '1'
+		} else {
+			scrollTop.style.opacity = '0'
+		}
+	})
 }
