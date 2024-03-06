@@ -761,11 +761,11 @@ input[type='checkbox']:focus-visible + label::before {
 	background-size: cover;
 
 	&__left {
-		max-width: 40%;
+		max-width: 30%;
 	}
 
 	&__right {
-		max-width: 60%;
+		max-width: 70%;
 		display: flex;
 		flex-direction: column;
 		gap: 25px;
