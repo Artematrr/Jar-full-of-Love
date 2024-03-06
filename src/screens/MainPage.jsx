@@ -112,8 +112,147 @@ const MainPage = () => {
 				</div>
 			</section>
 
-			<section className='form container' id='form'>
-				<h2 className='form__title'>Собери свою Банку любви</h2>
+			<section className='form' id='form'>
+				<div className='form__left'>
+					<h2 className='form__title'>
+						Собери свою <br />
+						<span className='form__title-accent'>Банку любви</span>
+					</h2>
+					<h3 className='form__subtitle'>
+						соберем для вас индивидуально с вашим участием
+					</h3>
+				</div>
+				<form action='POST' className='form__right'>
+					<div className='form__group'>
+						<label className='form__label form__label-fixed-width'>
+							Для кого
+						</label>
+						<input
+							type='hidden'
+							name='person-selected-value'
+							id='person-selected-value'
+						/>
+						<div className='form__dropdown'>
+							<button
+								type='button'
+								className='form__dropdown-selected-item form__input'
+								id='person-selected-item'
+							>
+								Для любимой
+							</button>
+							<ul className='form__dropdown-list' id='person-list'>
+								<li data-value='Для любимой'>Для любимой</li>
+								<li data-value='Для подруги'>Для подруги</li>
+								<li data-value='Для любимого'>Для любимого</li>
+							</ul>
+						</div>
+					</div>
+					<div className='form__group'>
+						<label className='form__label form__label-fixed-width'>
+							На какой праздник
+						</label>
+
+						<input
+							type='hidden'
+							name='holiday-selected-value'
+							id='holiday-selected-value'
+						/>
+						<div className='form__dropdown'>
+							<button
+								type='button'
+								className='form__dropdown-selected-item form__input'
+								id='holiday-selected-item'
+							>
+								День влюбленных
+							</button>
+							<ul className='form__dropdown-list' id='holiday-list'>
+								<li data-value='День влюбленных'>День влюбленных</li>
+								<li data-value='Восьмое марта'>Восьмое марта</li>
+							</ul>
+						</div>
+					</div>
+					<div className='form__group form__group-checkboxes'>
+						<div className='form__group'>
+							<input
+								type='checkbox'
+								name='my-choice'
+								id='my-choice'
+								className='form__checkbox'
+							/>
+							<label htmlFor='my-choice' className='form__label'>
+								Валентинки напишу сам
+							</label>
+						</div>
+						<div className='form__group'>
+							<input
+								type='checkbox'
+								name='your-choice'
+								id='your-choice'
+								className='form__checkbox'
+							/>
+							<label htmlFor='your-choice' className='form__label'>
+								Прислать мне валентинки на выбор
+							</label>
+						</div>
+					</div>
+					<div className='form__group'>
+						<label
+							htmlFor='name'
+							className='form__label form__label-fixed-width'
+						>
+							Имя
+						</label>
+						<input type='text' name='name' className='form__input' required />
+					</div>
+
+					<div className='form__group form__group-contacts'>
+						<div className='form__group'>
+							<label
+								htmlFor='tel'
+								className='form__label form__label-fixed-width'
+							>
+								Телефон
+							</label>
+							<input
+								type='text'
+								name='tel'
+								className='form__input'
+								placeholder='+7 (000) 000 00 00'
+								required
+							/>
+						</div>
+						<div className='form__group'>
+							<label htmlFor='email' className='form__label form__label-email'>
+								Email
+							</label>
+							<input
+								type='email'
+								name='email'
+								className='form__input'
+								placeholder='Email@site.ru'
+								required
+							/>
+						</div>
+					</div>
+					<div className='form__group form__group-submit'>
+						<div className='form__group form__group-privacy'>
+							<input
+								type='checkbox'
+								name='privacy'
+								id='privacy'
+								className='form__checkbox'
+								required
+								checked
+							/>
+							<label htmlFor='privacy' className='form__label'>
+								Нажимая на кнопку даю согласие на обработку Персональных данных
+							</label>
+						</div>
+						<button type='submit' className='form__button button button-fill'>
+							Заказать
+						</button>
+					</div>
+				</form>
 			</section>
 
 			<section className='advantages container' id='advantages'>
@@ -149,6 +288,7 @@ const MainPage = () => {
 					</p>
 				</div>
 			</section>
+
 			<section className='cards container'>
 				<a href='#' className='cards__item'>
 					<img src='img/cards-delivery.png' alt='Доставка' loading='lazy' />
@@ -170,6 +310,19 @@ const MainPage = () => {
 
 			<section className='reviews container' id='reviews'>
 				<h2 className='reviews__title'>Отзывы</h2>
+				<div className='reviews__items'>
+					<div className='reviews__item'>
+						<div className='reviews__item-left'>
+							<div className='reviews__item-stars'></div>
+							<div className='reviews__item-author'></div>
+							<div className='reviews__item-comment'></div>
+						</div>
+						<div className='reviews__item-right'>
+							<div className='reviews__item-name'></div>
+							<div className='reviews__item-swiper'></div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section className='delivery container' id='delivery'>
