@@ -145,7 +145,7 @@ input[type='checkbox']:not(:checked) + label::after {
 }
 input[type='checkbox']:checked + label::after,
 input[type='checkbox']:not(:checked) + label::after {
-	content: url('img/icons/selected.svg');
+	content: url('/img/icons/selected.svg');
 	left: 0px;
 	top: 0px;
 	width: 24px;
@@ -778,7 +778,7 @@ input[type='checkbox']:focus-visible + label::before {
 			position: relative;
 
 			&::after {
-				content: url('/public/img/icons/triangle-white.svg');
+				content: url('/img/icons/triangle-white.svg');
 				display: inline-block;
 				position: relative;
 				right: 0;
@@ -792,7 +792,7 @@ input[type='checkbox']:focus-visible + label::before {
 				color: var(--primary-500);
 
 				&::after {
-					content: url('/public/img/icons/triangle-red.svg');
+					content: url('/img/icons/triangle-red.svg');
 				}
 			}
 		}
