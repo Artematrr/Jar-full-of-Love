@@ -884,6 +884,10 @@ input[type='checkbox']:focus-visible + label::before {
 			&-submit {
 				justify-content: center;
 			}
+			
+			&-privacy {
+				text-align: center;
+			}
 		}
 	}
 }

@@ -1030,6 +1030,9 @@ input[type=checkbox]:focus-visible + label::before {
   .form__group-submit {
     justify-content: center;
   }
+  .form__group-privacy {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .form {
