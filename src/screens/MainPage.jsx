@@ -242,7 +242,7 @@ const MainPage = () => {
 								id='privacy'
 								className='form__checkbox'
 								required
-								checked
+								defaultChecked
 							/>
 							<label htmlFor='privacy' className='form__label'>
 								Нажимая на кнопку даю согласие на обработку Персональных данных

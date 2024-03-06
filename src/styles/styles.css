@@ -420,7 +420,7 @@ input[type=checkbox]:not(:checked) + label::after {
 
 input[type=checkbox]:checked + label::after,
 input[type=checkbox]:not(:checked) + label::after {
-  content: url("img/icons/selected.svg");
+  content: url("/img/icons/selected.svg");
   left: 0px;
   top: 0px;
   width: 24px;
@@ -916,7 +916,7 @@ input[type=checkbox]:focus-visible + label::before {
   align-items: flex-start;
 }
 .form__label {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   font-weight: 400;
   line-height: 125%;
   letter-spacing: 0.6px;
@@ -938,7 +938,7 @@ input[type=checkbox]:focus-visible + label::before {
   position: relative;
 }
 .form__dropdown-selected-item::after {
-  content: url("/public/img/icons/triangle-white.svg");
+  content: url("/img/icons/triangle-white.svg");
   display: inline-block;
   position: relative;
   right: 0;
@@ -951,7 +951,7 @@ input[type=checkbox]:focus-visible + label::before {
   color: var(--primary-500);
 }
 .form__dropdown-selected-item.active::after {
-  content: url("/public/img/icons/triangle-red.svg");
+  content: url("/img/icons/triangle-red.svg");
 }
 .form__dropdown-list {
   display: none;
