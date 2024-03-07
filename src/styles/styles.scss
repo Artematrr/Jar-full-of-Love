@@ -256,7 +256,7 @@ input[type='checkbox']:focus-visible + label::before {
 		display: flex;
 		max-width: 1410px;
 		width: 100%;
-		gap: 10px;
+		gap: 20px;
 		padding: 15px 10px;
 		align-items: center;
 		justify-content: space-between;
@@ -378,6 +378,7 @@ input[type='checkbox']:focus-visible + label::before {
 
 		&-checkbox {
 			position: absolute;
+			left: 0px !important;
 			display: block;
 			height: 40px;
 			width: 40px;
