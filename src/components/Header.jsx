@@ -76,28 +76,28 @@ const Header = () => {
 					<nav className='header__nav'>
 						<ul>
 							<li>
-								<a href='#' className='header__nav-link'>
+								<a href='#catalog' className='header__nav-link'>
 									Каталог
 								</a>
 							</li>
 
 							<li>
-								<a href='#' className='header__nav-link'>
+								<a href='#form' className='header__nav-link'>
 									На заказ
 								</a>
 							</li>
 							<li>
-								<a href='#' className='header__nav-link'>
+								<a href='#advantages' className='header__nav-link'>
 									Почему мы?
 								</a>
 							</li>
 							<li>
-								<a href='#' className='header__nav-link'>
+								<a href='#delivery' className='header__nav-link'>
 									Доставка и оплата
 								</a>
 							</li>
 							<li>
-								<a href='#' className='header__nav-link'>
+								<a href='#reviews' className='header__nav-link'>
 									Отзывы
 								</a>
 							</li>

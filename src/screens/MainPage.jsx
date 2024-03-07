@@ -306,7 +306,7 @@ const MainPage = () => {
 				</div>
 			</section>
 
-			<section className='cards container'>
+			<section className='cards container' id='delivery'>
 				<a href='#' className='cards__item'>
 					<img src='img/cards-delivery.png' alt='Доставка' loading='lazy' />
 				</a>

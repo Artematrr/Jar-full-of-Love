@@ -519,6 +519,14 @@ input[type=checkbox]:focus-visible + label::before {
     scale: 0.6;
   }
 }
+#catalog:target,
+#form:target,
+#advantages:target,
+#delivery:target,
+#reviews:target {
+  scroll-margin-top: 150px;
+}
+
 .header {
   position: sticky;
   top: 0;
