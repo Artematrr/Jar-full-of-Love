@@ -27,6 +27,8 @@ function initializeDropdown(selectedId, listId, inputId) {
 }
 
 window.onload = function () {
+	// Form Dropdown
+
 	initializeDropdown(
 		'person-selected-item',
 		'person-list',
@@ -37,18 +39,32 @@ window.onload = function () {
 		'holiday-list',
 		'holiday-selected-value'
 	)
+	// Header burger button
+
+	const headerBurgerCheckbox = document.getElementById(
+		'header__burger-checkbox'
+	)
+	const headerBurgerImage = document.getElementById('header__burger-image')
+
+	headerBurgerCheckbox.addEventListener('change', function () {
+		if (headerBurgerCheckbox.checked) {
+			headerBurgerImage.src = 'img/icons/close.svg'
+		} else {
+			headerBurgerImage.src = 'img/icons/menu.svg'
+		}
+	})
+
+	// Scroll to top button
 
 	const scrollTop = document.getElementById('scroll-top')
 
-	scrollTop.addEventListener('click', function () {
-		window.scrollTo({ top: 0, behavior: 'smooth' })
-	})
-
 	window.addEventListener('scroll', function () {
-		if (window.scrollY > 300) {
+		if (window.scrollY > 0) {
 			scrollTop.style.opacity = '1'
+			scrollTop.style.pointerEvents = 'auto'
 		} else {
 			scrollTop.style.opacity = '0'
+			scrollTop.style.pointerEvents = 'none'
 		}
 	})
 }
