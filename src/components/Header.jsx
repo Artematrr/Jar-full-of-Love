@@ -9,7 +9,7 @@ const Header = () => {
 						name='header__burger-checkbox'
 						id='header__burger-checkbox'
 					/>
-					<img src='img/icons/menu.svg' alt='Раскрыть мобильое меню' />
+					<img id='header__burger-image' src='img/icons/menu.svg' alt='Мобильое меню' />
 				</div>
 				<a href='#' className='header__logo'>
 					<div className='header__logo-image'>

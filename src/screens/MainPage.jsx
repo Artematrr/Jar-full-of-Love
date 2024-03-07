@@ -37,7 +37,11 @@ const MainPage = () => {
 
 					<span className='overlay__cart-count'>10</span>
 				</a>
-				<a className='overlay__scroll-top overlay__button' id='scroll-top'>
+				<a
+					href='#'
+					className='overlay__scroll-top overlay__button'
+					id='scroll-top'
+				>
 					<img src='img/icons/triangle-red-up.svg' alt='Наверх' />
 				</a>
 			</div>

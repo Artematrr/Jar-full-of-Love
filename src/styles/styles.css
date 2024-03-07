@@ -331,6 +331,15 @@ body {
   color: var(--black);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 a {
   color: var(--gray-700);
   text-decoration: none;
@@ -500,7 +509,7 @@ input[type=checkbox]:focus-visible + label::before {
 .overlay__scroll-top {
   opacity: 0;
   background: var(--Linear);
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
