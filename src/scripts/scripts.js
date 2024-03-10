@@ -1,3 +1,5 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
 function initializeDropdown(selectedId, listId, inputId) {
 	const selected = document.getElementById(selectedId)
 	const list = document.getElementById(listId)
@@ -24,6 +26,29 @@ function initializeDropdown(selectedId, listId, inputId) {
 			selected.classList.remove('active')
 		}
 	})
+
+	// Fix touchscreen
+	selected.addEventListener('touchstart', function () {
+		list.style.display = list.style.display === 'none' ? 'block' : 'none'
+		selected.classList.toggle('active')
+	})
+
+	list.addEventListener('touchstart', function (e) {
+		if (e.target.tagName === 'LI') {
+			const selectedValue = e.target.getAttribute('data-value')
+			selected.textContent = selectedValue
+			input.value = selectedValue
+			list.style.display = 'none'
+			selected.classList.remove('active')
+		}
+	})
+
+	document.addEventListener('touchstart', function (e) {
+		if (!selected.contains(e.target)) {
+			list.style.display = 'none'
+			selected.classList.remove('active')
+		}
+	})
 }
 
 window.onload = function () {
@@ -39,6 +64,7 @@ window.onload = function () {
 		'holiday-list',
 		'holiday-selected-value'
 	)
+
 	// Header burger button
 
 	const headerBurgerCheckbox = document.getElementById(
@@ -54,7 +80,7 @@ window.onload = function () {
 		}
 	})
 
-	// Scroll to top button
+	// Scroll top button
 
 	const scrollTop = document.getElementById('scroll-top')
 
@@ -66,5 +92,42 @@ window.onload = function () {
 			scrollTop.style.opacity = '0'
 			scrollTop.style.pointerEvents = 'none'
 		}
+	})
+
+	// Rewiews swiper
+
+	new Swiper('.reviews__swiper', {
+		loop: true,
+		spaceBetween: 30,
+
+		mousewheel: {
+			forceToAxis: true,
+		},
+
+		slidesPerView: 1,
+		breakpoints: {
+			480: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 1,
+			},
+		},
+
+		navigation: {
+			nextEl: '.reviews__swiper-button-next',
+			prevEl: '.reviews__swiper-button-prev',
+		},
+	})
+
+	new Swiper('.reviews__item-swiper', {
+		loop: true,
+		spaceBetween: 10,
+		slidesPerView: 1,
+
+		navigation: {
+			nextEl: '.reviews__item-swiper-button-next',
+			prevEl: '.reviews__item-swiper-button-prev',
+		},
 	})
 }
