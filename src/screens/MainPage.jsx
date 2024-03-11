@@ -330,37 +330,35 @@ const MainPage = () => {
 
 				<div className='reviews__swiper'>
 					<div className='swiper-wrapper'>
-						<div className='swiper-container'>
-							<div className='swiper-slide'>
-								<div className='reviews__item'>
-									<div className='reviews__item-left'>
-										<div className='reviews__item-stars'>
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-										</div>
-										<h3 className='reviews__item-author'>
-											Мередова Елена Григорьевна
-										</h3>
-										<p className='reviews__item-comment'>
-											Принимая во внимание показатели успешности, базовый вектор
-											развития, в своём классическом представлении, допускает
-											внедрение поставленных обществом задач. В рамках
-											спецификации современных стандартов, диаграммы связей,
-											инициированные исключительно синтетически, своевременно
-											верифицированы. Но предприниматели в сети.
-										</p>
+						<div className='swiper-slide'>
+							<div className='reviews__item'>
+								<div className='reviews__item-left'>
+									<div className='reviews__item-stars'>
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
 									</div>
-									<div className='reviews__item-right'>
-										<p className='reviews__item-type'>
-											Отзыв к баночке:
-											<span className='reviews__item-type-accent'>
-												Для него
-											</span>
-										</p>
+									<h3 className='reviews__item-author'>
+										Мередова Елена Григорьевна
+									</h3>
+									<p className='reviews__item-comment'>
+										Принимая во внимание показатели успешности, базовый вектор
+										развития, в своём классическом представлении, допускает
+										внедрение поставленных обществом задач. В рамках
+										спецификации современных стандартов, диаграммы связей,
+										инициированные исключительно синтетически, своевременно
+										верифицированы. Но предприниматели в сети.
+									</p>
+								</div>
+								<div className='reviews__item-right'>
+									<p className='reviews__item-type'>
+										Отзыв к баночке:
+										<span className='reviews__item-type-accent'>Для него</span>
+									</p>
+									<div className='reviews__item-swiper-container'>
 										<div className='reviews__item-swiper'>
 											<div className='swiper-wrapper'>
 												<div className='swiper-slide'>
@@ -379,36 +377,36 @@ const MainPage = () => {
 									</div>
 								</div>
 							</div>
-							<div className='swiper-slide'>
-								<div className='reviews__item'>
-									<div className='reviews__item-left'>
-										<div className='reviews__item-stars'>
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-										</div>
-										<h3 className='reviews__item-author'>
-											Мередова Елена Григорьевна
-										</h3>
-										<p className='reviews__item-comment'>
-											Принимая во внимание показатели успешности, базовый вектор
-											развития, в своём классическом представлении, допускает
-											внедрение поставленных обществом задач. В рамках
-											спецификации современных стандартов, диаграммы связей,
-											инициированные исключительно синтетически, своевременно
-											верифицированы. Но предприниматели в сети.
-										</p>
+						</div>
+						<div className='swiper-slide'>
+							<div className='reviews__item'>
+								<div className='reviews__item-left'>
+									<div className='reviews__item-stars'>
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
 									</div>
-									<div className='reviews__item-right'>
-										<p className='reviews__item-type'>
-											Отзыв к баночке:
-											<span className='reviews__item-type-accent'>
-												Для него
-											</span>
-										</p>
+									<h3 className='reviews__item-author'>
+										Мередова Елена Григорьевна
+									</h3>
+									<p className='reviews__item-comment'>
+										Принимая во внимание показатели успешности, базовый вектор
+										развития, в своём классическом представлении, допускает
+										внедрение поставленных обществом задач. В рамках
+										спецификации современных стандартов, диаграммы связей,
+										инициированные исключительно синтетически, своевременно
+										верифицированы. Но предприниматели в сети.
+									</p>
+								</div>
+								<div className='reviews__item-right'>
+									<p className='reviews__item-type'>
+										Отзыв к баночке:
+										<span className='reviews__item-type-accent'>Для него</span>
+									</p>
+									<div className='reviews__item-swiper-container'>
 										<div className='reviews__item-swiper'>
 											<div className='swiper-wrapper'>
 												<div className='swiper-slide'>
@@ -427,36 +425,36 @@ const MainPage = () => {
 									</div>
 								</div>
 							</div>
-							<div className='swiper-slide'>
-								<div className='reviews__item'>
-									<div className='reviews__item-left'>
-										<div className='reviews__item-stars'>
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-											<img src='img/icons/star.svg' alt='' />
-										</div>
-										<h3 className='reviews__item-author'>
-											Мередова Елена Григорьевна
-										</h3>
-										<p className='reviews__item-comment'>
-											Принимая во внимание показатели успешности, базовый вектор
-											развития, в своём классическом представлении, допускает
-											внедрение поставленных обществом задач. В рамках
-											спецификации современных стандартов, диаграммы связей,
-											инициированные исключительно синтетически, своевременно
-											верифицированы. Но предприниматели в сети.
-										</p>
+						</div>
+						<div className='swiper-slide'>
+							<div className='reviews__item'>
+								<div className='reviews__item-left'>
+									<div className='reviews__item-stars'>
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
+										<img src='img/icons/star.svg' alt='' />
 									</div>
-									<div className='reviews__item-right'>
-										<p className='reviews__item-type'>
-											Отзыв к баночке:
-											<span className='reviews__item-type-accent'>
-												Для него
-											</span>
-										</p>
+									<h3 className='reviews__item-author'>
+										Мередова Елена Григорьевна
+									</h3>
+									<p className='reviews__item-comment'>
+										Принимая во внимание показатели успешности, базовый вектор
+										развития, в своём классическом представлении, допускает
+										внедрение поставленных обществом задач. В рамках
+										спецификации современных стандартов, диаграммы связей,
+										инициированные исключительно синтетически, своевременно
+										верифицированы. Но предприниматели в сети.
+									</p>
+								</div>
+								<div className='reviews__item-right'>
+									<p className='reviews__item-type'>
+										Отзыв к баночке:
+										<span className='reviews__item-type-accent'>Для него</span>
+									</p>
+									<div className='reviews__item-swiper-container'>
 										<div className='reviews__item-swiper'>
 											<div className='swiper-wrapper'>
 												<div className='swiper-slide'>
