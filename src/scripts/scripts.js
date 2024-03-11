@@ -97,8 +97,8 @@ window.onload = function () {
 	// Rewiews swiper
 
 	new Swiper('.reviews__swiper', {
-		loop: true,
-		spaceBetween: 30,
+		loop: false,
+		spaceBetween: -20,
 
 		mousewheel: {
 			forceToAxis: true,
@@ -110,7 +110,7 @@ window.onload = function () {
 				slidesPerView: 1,
 			},
 			768: {
-				slidesPerView: 1,
+				slidesPerView: 2,
 			},
 		},
 
@@ -121,7 +121,7 @@ window.onload = function () {
 	})
 
 	new Swiper('.reviews__item-swiper', {
-		loop: true,
+		loop: false,
 		spaceBetween: 10,
 		slidesPerView: 1,
 

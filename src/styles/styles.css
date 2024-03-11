@@ -1233,15 +1233,16 @@ input[type=checkbox]:focus-visible + label::before {
 }
 .reviews {
   overflow: hidden;
+  margin-inline: 30px;
 }
 .reviews__swiper {
   position: relative;
 }
 .reviews__swiper-button-prev {
-  background: url(/img/icons/left-red.svg) no-repeat center;
+  background: url("/img/icons/left-red.svg") no-repeat center;
 }
 .reviews__swiper-button-next {
-  background: url(/img/icons/right-red.svg) no-repeat center;
+  background: url("/img/icons/right-red.svg") no-repeat center;
 }
 .reviews__title {
   color: var(--secondary-700);
@@ -1261,14 +1262,14 @@ input[type=checkbox]:focus-visible + label::before {
   margin-inline: 30px;
 }
 .reviews__item-left {
-  max-width: 70%;
+  max-width: 65%;
 }
 .reviews__item-right {
-  width: 30%;
-  min-width: 200px;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   gap: 10px;
 }
 .reviews__item-stars {
@@ -1308,21 +1309,32 @@ input[type=checkbox]:focus-visible + label::before {
 }
 .reviews__item-swiper {
   position: relative;
-}
-.reviews__item-swiper-button-prev {
-  background: url(/img/icons/left-black.svg) no-repeat center;
-}
-.reviews__item-swiper-button-next {
-  background: url(/img/icons/right-black.svg) no-repeat center;
-}
-.reviews__item-swiper-container {
-  overflow: hidden;
   max-width: 200px;
-  margin-inline: auto;
+  overflow: hidden;
   border-radius: 50%;
   border: 2px solid var(--secondary-200);
   aspect-ratio: 1/1;
 }
+.reviews__item-swiper .swiper-wrapper {
+  max-width: 170px;
+}
+.reviews__item-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__item-swiper .swiper-slide img {
+  max-width: 75%;
+}
+.reviews__item-swiper-button-prev {
+  margin-top: -10px;
+  background: url("/img/icons/left-black.svg") no-repeat center;
+}
+.reviews__item-swiper-button-next {
+  margin-top: -10px;
+  background: url("/img/icons/right-black.svg") no-repeat center;
+}
+
 @media screen and (max-width: 768px) {
   .reviews__item {
     flex-direction: column;
@@ -1332,6 +1344,7 @@ input[type=checkbox]:focus-visible + label::before {
   }
   .reviews__item-right {
     width: 100%;
+    align-items: center;
   }
 }
 .delivery {

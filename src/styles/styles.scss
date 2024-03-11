@@ -261,7 +261,6 @@ input[type='checkbox']:focus-visible + label::before {
 	}
 }
 
-
 // Swiper
 
 .swiper {
@@ -1135,17 +1134,18 @@ input[type='checkbox']:focus-visible + label::before {
 
 .reviews {
 	overflow: hidden;
+	margin-inline: 30px;
 
 	&__swiper {
 		position: relative;
 
 		&-button {
 			&-prev {
-				background: url(/img/icons/left-red.svg) no-repeat center;
+				background: url('/img/icons/left-red.svg') no-repeat center;
 			}
 
 			&-next {
-				background: url(/img/icons/right-red.svg) no-repeat center;
+				background: url('/img/icons/right-red.svg') no-repeat center;
 			}
 		}
 	}
@@ -1169,17 +1169,16 @@ input[type='checkbox']:focus-visible + label::before {
 		margin-inline: 30px;
 
 		&-left {
-			max-width: 70%;
+			max-width: 65%;
 		}
 
 		&-right {
-			width: 30%;
-			min-width: 200px;
+			width: 35%;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
+			align-items: center;
 			gap: 10px;
-			// align-items: center;
 		}
 
 		&-stars {
@@ -1224,32 +1223,38 @@ input[type='checkbox']:focus-visible + label::before {
 
 		&-swiper {
 			position: relative;
+			max-width: 200px;
+			overflow: hidden;
+			border-radius: 50%;
+			border: 2px solid var(--secondary-200);
+			aspect-ratio: 1 / 1;
 
-			&-button {
-				&-prev {
-					// left: -100px;
-					background: url(/img/icons/left-black.svg) no-repeat center;
-				}
-
-				&-next {
-					// right: 100px;
-					background: url(/img/icons/right-black.svg) no-repeat center;
-				}
-			}
-
-			// &-wrapper {
-			// }
-
-			&-container {
-				overflow: hidden;
-				max-width: 200px;
-				margin-inline: auto;
-				border-radius: 50%;
-				border: 2px solid var(--secondary-200);
-				aspect-ratio: 1 / 1;
+			.swiper-wrapper {
+				max-width: 170px;
 			}
 
 			.swiper-slide {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+				img {
+					max-width: 75%;
+				}
+			}
+
+			&-button {
+				&-prev {
+					// left: -30px;
+					margin-top: -10px;
+					background: url('/img/icons/left-black.svg') no-repeat center;
+				}
+
+				&-next {
+					// right: -30px;
+					margin-top: -10px;
+					background: url('/img/icons/right-black.svg') no-repeat center;
+				}
 			}
 		}
 	}
@@ -1266,11 +1271,11 @@ input[type='checkbox']:focus-visible + label::before {
 
 			&-right {
 				width: 100%;
+				align-items: center;
 			}
 		}
 	}
 }
-
 
 // Delivery
 
