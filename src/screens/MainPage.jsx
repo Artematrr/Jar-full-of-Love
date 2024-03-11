@@ -306,7 +306,7 @@ const MainPage = () => {
 				</div>
 			</section>
 
-			<section className='cards container'>
+			<section className='cards container' id='delivery'>
 				<a href='#' className='cards__item'>
 					<img src='img/cards-delivery.png' alt='Доставка' loading='lazy' />
 				</a>
@@ -327,18 +327,63 @@ const MainPage = () => {
 
 			<section className='reviews container' id='reviews'>
 				<h2 className='reviews__title'>Отзывы</h2>
-				<div className='reviews__items'>
-					<div className='reviews__item'>
-						<div className='reviews__item-left'>
-							<div className='reviews__item-stars'></div>
-							<div className='reviews__item-author'></div>
-							<div className='reviews__item-comment'></div>
-						</div>
-						<div className='reviews__item-right'>
-							<div className='reviews__item-name'></div>
-							<div className='reviews__item-swiper'></div>
+
+				<div className='reviews__swiper'>
+					<div className='swiper-wrapper'>
+						<div className='swiper-container'>
+							<div className='swiper-slide'>
+								<div className='reviews__item'>
+									<div className='reviews__item-left'>
+										<div className='reviews__item-stars'>
+											<img src='img/icons/star.svg' alt='' />
+											<img src='img/icons/star.svg' alt='' />
+											<img src='img/icons/star.svg' alt='' />
+											<img src='img/icons/star.svg' alt='' />
+											<img src='img/icons/star.svg' alt='' />
+											<img src='img/icons/star.svg' alt='' />
+										</div>
+										<h3 className='reviews__item-author'>
+											Мередова Елена Григорьевна
+										</h3>
+										<p className='reviews__item-comment'>
+											Принимая во внимание показатели успешности, базовый вектор
+											развития, в своём классическом представлении, допускает
+											внедрение поставленных обществом задач. В рамках
+											спецификации современных стандартов, диаграммы связей,
+											инициированные исключительно синтетически, своевременно
+											верифицированы. Но предприниматели в сети.
+										</p>
+									</div>
+									<div className='reviews__item-right'>
+										<p className='reviews__item-type'>
+											Отзыв к баночке:
+											<span className='reviews__item-type-accent'>
+												Для него
+											</span>
+										</p>
+										<div className='reviews__item-swiper'>
+											<div className='swiper-wrapper'>
+												<div className='swiper-slide'>
+													<img src='img/jar.png' alt='' loading='lazy' />
+												</div>
+												<div className='swiper-slide'>
+													<img src='img/jar.png' alt='' loading='lazy' />
+												</div>
+												<div className='swiper-slide'>
+													<img src='img/jar.png' alt='' loading='lazy' />
+												</div>
+											</div>
+											<div className='swiper-button-prev reviews__item-swiper-button-prev'></div>
+											<div className='swiper-button-next reviews__item-swiper-button-next'></div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+
+					<div className='swiper-button-prev reviews__swiper-button-prev'></div>
+					<div className='swiper-button-next reviews__swiper-button-next'></div>
 				</div>
 			</section>
 
