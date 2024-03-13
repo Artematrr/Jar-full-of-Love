@@ -16,12 +16,10 @@ const MainPage = () => {
 						<li className='hero__list-item'>Подарок к любому празднику</li>
 					</ul>
 					<div className='hero__buttons-container'>
-						<a href='#form' className='hero__button button button-fill'>
+						<a href='#form' className='button button-fill'>
 							Заказать уже готовую
 						</a>
-						<button className='hero__button button button-outline'>
-							Собери свою банку
-						</button>
+						<button className='button button-outline'>Собери свою банку</button>
 					</div>
 				</div>
 				<div className='hero__image'>
@@ -68,9 +66,7 @@ const MainPage = () => {
 										1000 <span>₽</span>
 									</div>
 								</div>
-								<button className='catalog__item-button button button-fill'>
-									Заказать
-								</button>
+								<button className='button button-fill'>Заказать</button>
 							</div>
 						</div>
 					</div>
@@ -95,9 +91,7 @@ const MainPage = () => {
 										1000 <span>₽</span>
 									</div>
 								</div>
-								<button className='catalog__item-button button button-fill'>
-									Заказать
-								</button>
+								<button className='button button-fill'>Заказать</button>
 							</div>
 						</div>
 					</div>
@@ -120,9 +114,7 @@ const MainPage = () => {
 										1000 <span>₽</span>
 									</div>
 								</div>
-								<button className='catalog__item-button button button-fill'>
-									Заказать
-								</button>
+								<button className='button button-fill'>Заказать</button>
 							</div>
 						</div>
 					</div>
@@ -190,23 +182,13 @@ const MainPage = () => {
 					</div>
 					<div className='form__group form__group-checkboxes'>
 						<div className='form__group'>
-							<input
-								type='checkbox'
-								name='my-choice'
-								id='my-choice'
-								className='form__checkbox'
-							/>
+							<input type='checkbox' name='my-choice' id='my-choice' />
 							<label htmlFor='my-choice' className='form__label'>
 								Валентинки напишу сам
 							</label>
 						</div>
 						<div className='form__group'>
-							<input
-								type='checkbox'
-								name='your-choice'
-								id='your-choice'
-								className='form__checkbox'
-							/>
+							<input type='checkbox' name='your-choice' id='your-choice' />
 							<label htmlFor='your-choice' className='form__label'>
 								Прислать мне валентинки на выбор
 							</label>
@@ -257,7 +239,6 @@ const MainPage = () => {
 								type='checkbox'
 								name='privacy'
 								id='privacy'
-								className='form__checkbox'
 								required
 								defaultChecked
 							/>
