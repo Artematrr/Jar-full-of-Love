@@ -619,7 +619,7 @@ input[type=checkbox]:focus-visible + label::before {
 }
 .header__nav-link {
   color: var(--gray-700);
-  font-size: 16px;
+  font-size: clamp(14px, 1.5vw, 16px);
   font-weight: 600;
   line-height: 20px;
 }
@@ -914,6 +914,7 @@ input[type=checkbox]:focus-visible + label::before {
   letter-spacing: 0.6px;
   text-decoration: line-through;
 }
+
 @media screen and (max-width: 992px) {
   .catalog__item {
     max-width: calc(50% - 30px);
