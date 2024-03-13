@@ -370,7 +370,7 @@ input[type='checkbox']:focus-visible + label::before {
 
 		&-link {
 			color: var(--gray-700);
-			font-size: 16px;
+			font-size: clamp(14px, 1.5vw, 16px);
 			font-weight: 600;
 			line-height: 20px;
 		}
@@ -1230,13 +1230,11 @@ input[type='checkbox']:focus-visible + label::before {
 
 			&-button {
 				&-prev {
-					// left: -30px;
 					margin-top: -10px;
 					background: url('/img/icons/left-black.svg') no-repeat center;
 				}
 
 				&-next {
-					// right: -30px;
 					margin-top: -10px;
 					background: url('/img/icons/right-black.svg') no-repeat center;
 				}

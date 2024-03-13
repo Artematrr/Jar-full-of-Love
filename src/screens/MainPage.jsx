@@ -339,7 +339,6 @@ const MainPage = () => {
 										Отзыв к баночке:
 										<span className='reviews__item-type-accent'>Для него</span>
 									</p>
-									<div className='reviews__item-swiper-container'>
 										<div className='reviews__item-swiper'>
 											<div className='swiper-wrapper'>
 												<div className='swiper-slide'>
@@ -355,7 +354,6 @@ const MainPage = () => {
 											<div className='swiper-button-prev reviews__item-swiper-button-prev'></div>
 											<div className='swiper-button-next reviews__item-swiper-button-next'></div>
 										</div>
-									</div>
 								</div>
 							</div>
 						</div>
