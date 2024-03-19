@@ -19,7 +19,13 @@ const MainPage = () => {
 						<a href='#form' className='button button-fill'>
 							Заказать уже готовую
 						</a>
-						<button className='button button-outline'>Собери свою банку</button>
+						<button
+							className='button button-outline'
+							data-bs-toggle='modal'
+							data-bs-target='#callbackModal'
+						>
+							Собери свою банку
+						</button>
 					</div>
 				</div>
 				<div className='hero__image'>
@@ -28,7 +34,11 @@ const MainPage = () => {
 			</section>
 
 			<div className='overlay'>
-				<a className='overlay__cart overlay__button'>
+				<a
+					className='overlay__cart overlay__button'
+					data-bs-toggle='modal'
+					data-bs-target='#cartModal'
+				>
 					<div className='overlay__cart-image'>
 						<img src='img/icons/cart.svg' alt='Корзина' />
 					</div>
@@ -66,7 +76,13 @@ const MainPage = () => {
 										1000 <span>₽</span>
 									</div>
 								</div>
-								<button className='button button-fill'>Заказать</button>
+								<button
+									data-bs-toggle='modal'
+									data-bs-target='#catalogModal'
+									className='button button-fill'
+								>
+									Заказать
+								</button>
 							</div>
 						</div>
 					</div>
@@ -91,7 +107,13 @@ const MainPage = () => {
 										1000 <span>₽</span>
 									</div>
 								</div>
-								<button className='button button-fill'>Заказать</button>
+								<button
+									data-bs-toggle='modal'
+									data-bs-target='#catalogModal'
+									className='button button-fill'
+								>
+									Заказать
+								</button>
 							</div>
 						</div>
 					</div>
@@ -114,7 +136,13 @@ const MainPage = () => {
 										1000 <span>₽</span>
 									</div>
 								</div>
-								<button className='button button-fill'>Заказать</button>
+								<button
+									data-bs-toggle='modal'
+									data-bs-target='#catalogModal'
+									className='button button-fill'
+								>
+									Заказать
+								</button>
 							</div>
 						</div>
 					</div>
@@ -131,21 +159,17 @@ const MainPage = () => {
 						соберем для вас индивидуально с вашим участием
 					</h3>
 				</div>
-				<form action='POST' className='form__right'>
+				<form className='form__right' action='POST'>
 					<div className='form__group'>
 						<label className='form__label form__label-fixed-width'>
 							Для кого
 						</label>
-						<input
-							type='hidden'
-							name='person-selected-value'
-							id='person-selected-value'
-						/>
+						<input type='hidden' name='person-value' id='person-value' />
 						<div className='form__dropdown'>
 							<button
 								type='button'
-								className='form__dropdown-selected-item form__input'
-								id='person-selected-item'
+								className='form__dropdown-selected form__input'
+								id='person-selected'
 							>
 								Для любимой
 							</button>
@@ -160,17 +184,12 @@ const MainPage = () => {
 						<label className='form__label form__label-fixed-width'>
 							На какой праздник
 						</label>
-
-						<input
-							type='hidden'
-							name='holiday-selected-value'
-							id='holiday-selected-value'
-						/>
+						<input type='hidden' name='holiday-value' id='holiday-value' />
 						<div className='form__dropdown'>
 							<button
 								type='button'
-								className='form__dropdown-selected-item form__input'
-								id='holiday-selected-item'
+								className='form__dropdown-selected form__input'
+								id='holiday-selected'
 							>
 								День влюбленных
 							</button>
@@ -337,23 +356,25 @@ const MainPage = () => {
 								<div className='reviews__item-right'>
 									<p className='reviews__item-type'>
 										Отзыв к баночке:
-										<span className='reviews__item-type-accent'>Для него</span>
+										<span className='reviews__item-type-accent text-accent'>
+											Для него
+										</span>
 									</p>
-										<div className='reviews__item-swiper'>
-											<div className='swiper-wrapper'>
-												<div className='swiper-slide'>
-													<img src='img/jar.png' alt='' loading='lazy' />
-												</div>
-												<div className='swiper-slide'>
-													<img src='img/jar.png' alt='' loading='lazy' />
-												</div>
-												<div className='swiper-slide'>
-													<img src='img/jar.png' alt='' loading='lazy' />
-												</div>
+									<div className='reviews__item-swiper'>
+										<div className='swiper-wrapper'>
+											<div className='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
 											</div>
-											<div className='swiper-button-prev reviews__item-swiper-button-prev'></div>
-											<div className='swiper-button-next reviews__item-swiper-button-next'></div>
+											<div className='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
+											</div>
+											<div className='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
+											</div>
 										</div>
+										<div className='swiper-button-prev reviews__item-swiper-button-prev'></div>
+										<div className='swiper-button-next reviews__item-swiper-button-next'></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -383,7 +404,9 @@ const MainPage = () => {
 								<div className='reviews__item-right'>
 									<p className='reviews__item-type'>
 										Отзыв к баночке:
-										<span className='reviews__item-type-accent'>Для него</span>
+										<span className='reviews__item-type-accent text-accent'>
+											Для него
+										</span>
 									</p>
 									<div className='reviews__item-swiper-container'>
 										<div className='reviews__item-swiper'>
@@ -431,7 +454,9 @@ const MainPage = () => {
 								<div className='reviews__item-right'>
 									<p className='reviews__item-type'>
 										Отзыв к баночке:
-										<span className='reviews__item-type-accent'>Для него</span>
+										<span className='reviews__item-type-accent text-accent'>
+											Для него
+										</span>
 									</p>
 									<div className='reviews__item-swiper-container'>
 										<div className='reviews__item-swiper'>

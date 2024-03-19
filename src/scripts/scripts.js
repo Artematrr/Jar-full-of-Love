@@ -5,65 +5,128 @@ function initializeDropdown(selectedId, listId, inputId) {
 	const list = document.getElementById(listId)
 	const input = document.getElementById(inputId)
 
-	selected.addEventListener('click', function () {
-		list.style.display = list.style.display === 'none' ? 'block' : 'none'
+	function toggleDropdown(eventType) {
 		selected.classList.toggle('active')
-	})
+		const handleClick = e => {
+			if (!selected.contains(e.target)) {
+				selected.classList.remove('active')
+				document.removeEventListener(eventType, handleClick)
+			}
+		}
+		document.addEventListener(eventType, handleClick)
+	}
 
-	list.addEventListener('click', function (e) {
+	const handleListItemClick = e => {
+		const delay = 250
 		if (e.target.tagName === 'LI') {
 			const selectedValue = e.target.getAttribute('data-value')
-			selected.textContent = selectedValue
 			input.value = selectedValue
-			list.style.display = 'none'
-			selected.classList.remove('active')
-		}
-	})
-
-	document.addEventListener('click', function (e) {
-		if (!selected.contains(e.target)) {
-			list.style.display = 'none'
-			selected.classList.remove('active')
-		}
-	})
-
-	// Fix touchscreen
-	selected.addEventListener('touchstart', function () {
-		list.style.display = list.style.display === 'none' ? 'block' : 'none'
-		selected.classList.toggle('active')
-	})
-
-	list.addEventListener('touchstart', function (e) {
-		if (e.target.tagName === 'LI') {
-			const selectedValue = e.target.getAttribute('data-value')
 			selected.textContent = selectedValue
-			input.value = selectedValue
-			list.style.display = 'none'
-			selected.classList.remove('active')
+			setTimeout(() => {
+				selected.classList.remove('active')
+			}, delay)
 		}
-	})
+	}
 
-	document.addEventListener('touchstart', function (e) {
-		if (!selected.contains(e.target)) {
-			list.style.display = 'none'
-			selected.classList.remove('active')
+	selected.addEventListener('click', () => toggleDropdown('click'))
+	selected.addEventListener('touchmove', () => toggleDropdown('touchstart'))
+	list.addEventListener('click', handleListItemClick)
+	list.addEventListener('touchstart', handleListItemClick)
+
+	// // Fix touchscreen
+	// selected.addEventListener('touchstart', function () {
+	// 	// list.style.display = list.style.display === 'none' ? 'block' : 'none'
+	// 	// list.classList.toggle('active');
+	// 	selected.classList.toggle('active')
+	// })
+
+	// list.addEventListener('touchstart', function (e) {
+	// 	if (e.target.tagName === 'LI') {
+	// 		const selectedValue = e.target.getAttribute('data-value')
+	// 		selected.textContent = selectedValue
+	// 		input.value = selectedValue
+	// 		// list.style.display = 'none'
+	// 		// list.classList.toggle('active');
+	// 		selected.classList.remove('active')
+	// 	}
+	// })
+
+	// document.addEventListener('touchstart', function (e) {
+	// 	if (!selected.contains(e.target)) {
+	// 		// list.style.display = 'none'
+	// 		// list.classList.toggle('active');
+	// 		selected.classList.remove('active')
+	// 	}
+	// })
+}
+
+function initializeCounters() {
+	const counters = document.querySelectorAll('.counter')
+
+	counters.forEach(counter => {
+		const input = counter.querySelector('.counter-input')
+		const minusBtn = counter.querySelector('.counter-minus')
+		const plusBtn = counter.querySelector('.counter-plus')
+		const valueDisplay = counter.querySelector('.counter-value')
+
+		let count = parseInt(valueDisplay.textContent)
+
+		minusBtn.addEventListener('click', () => {
+			if (count > 1) {
+				count--
+				valueDisplay.textContent = count
+				input.value = count
+			}
+		})
+
+		plusBtn.addEventListener('click', () => {
+			count++
+			valueDisplay.textContent = count
+			input.value = count
+		})
+	})
+}
+
+function movePriceElement() {
+	const screenWidth = window.innerWidth
+	const cartItemInfos = document.querySelectorAll('.cart__item-info')
+
+	cartItemInfos.forEach(cartItemInfo => {
+		const catalogItemPrice = cartItemInfo.querySelector(
+			'.cart__item-info .catalog__item-price'
+		)
+		const cartItemTitlePrice = cartItemInfo.querySelector(
+			'.cart__item-title-price'
+		)
+		const cartItemPrice = cartItemInfo.querySelector('.cart__item-price')
+
+		if (screenWidth < 768) {
+			cartItemTitlePrice.appendChild(catalogItemPrice)
+		} else {
+			cartItemPrice.appendChild(catalogItemPrice)
 		}
 	})
 }
 
 window.onload = function () {
-	// Form Dropdown
+	// Form dropdown
 
-	initializeDropdown(
-		'person-selected-item',
-		'person-list',
-		'person-selected-value'
-	)
-	initializeDropdown(
-		'holiday-selected-item',
-		'holiday-list',
-		'holiday-selected-value'
-	)
+	initializeDropdown('person-selected', 'person-list', 'person-value')
+	initializeDropdown('holiday-selected', 'holiday-list', 'holiday-value')
+
+	initializeDropdown('city-selected', 'city-list', 'city-value')
+	initializeDropdown('house-selected', 'house-list', 'house-value')
+	initializeDropdown('street-selected', 'street-list', 'street-value')
+	initializeDropdown('apartment-selected', 'apartment-list', 'apartment-value')
+
+	// Modal counters
+	
+	initializeCounters()
+
+	// Cart modal
+	
+	movePriceElement(	)
+	window.addEventListener('resize', movePriceElement)
 
 	// Header burger button
 
@@ -97,37 +160,82 @@ window.onload = function () {
 	// Rewiews swiper
 
 	new Swiper('.reviews__swiper', {
-		loop: false,
 		spaceBetween: -20,
-
-		mousewheel: {
-			forceToAxis: true,
-		},
 
 		slidesPerView: 1,
 		breakpoints: {
 			480: {
 				slidesPerView: 1,
 			},
-			768: {
+			992: {
 				slidesPerView: 2,
 			},
 		},
 
+		mousewheel: {
+			forceToAxis: true,
+		},
+
 		navigation: {
-			nextEl: '.reviews__swiper-button-next',
 			prevEl: '.reviews__swiper-button-prev',
+			nextEl: '.reviews__swiper-button-next',
 		},
 	})
 
 	new Swiper('.reviews__item-swiper', {
-		loop: false,
-		spaceBetween: 10,
 		slidesPerView: 1,
 
 		navigation: {
-			nextEl: '.reviews__item-swiper-button-next',
 			prevEl: '.reviews__item-swiper-button-prev',
+			nextEl: '.reviews__item-swiper-button-next',
+		},
+	})
+
+	// Catalog modal swiper
+
+	let catalogSwiper = new Swiper('.catalog__swiper', {
+		slidesPerView: 4,
+
+		breakpoints: {
+			320: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+
+			1200: {
+				slidesPerView: 4,
+			},
+		},
+
+		spaceBetween: 10,
+
+		mousewheel: {
+			forceToAxis: true,
+		},
+
+		navigation: {
+			prevEl: '.catalog__swiper-button-prev',
+			nextEl: '.catalog__swiper-button-next',
+		},
+	})
+
+	new Swiper('.catalog__swiper-preview', {
+		slidesPerView: 1,
+
+		thumbs: {
+			swiper: catalogSwiper,
+		},
+
+		spaceBetween: 25,
+
+		navigation: {
+			prevEl: '.catalog__swiper-preview-button-prev',
+			nextEl: '.catalog__swiper-preview-button-next',
 		},
 	})
 }
