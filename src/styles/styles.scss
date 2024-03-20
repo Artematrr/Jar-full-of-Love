@@ -479,10 +479,6 @@ input[type='checkbox']:focus-visible + label::before {
 }
 
 #callbackModal {
-	.modal-dialog {
-		// max-width: 600px;
-	}
-
 	.callback-form {
 		display: flex;
 		flex-direction: column;
@@ -1267,7 +1263,6 @@ input[type='checkbox']:focus-visible + label::before {
 			font-weight: 400;
 			line-height: 30px;
 			max-width: 250px;
-			// min-width: 220px;
 		}
 	}
 

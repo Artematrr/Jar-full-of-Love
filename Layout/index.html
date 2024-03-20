@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="img/logo.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Банка полная любви</title>
+	<meta name="description" content="Оригинальный подарок для самого любимого, дорогого человека" />
+
+	<!-- Styles -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header class='header'>
+		<div class='header__inner'>
+			<div class='header-icon header__burger'>
+				<input class='header__burger-checkbox' type='checkbox' name='header__burger-checkbox'
+					id='header__burger-checkbox' />
+				<img id='header__burger-image' src='img/icons/menu.svg' alt='Мобильное меню' />
+			</div>
+			<a href='#' class='header__logo'>
+				<div class='header__logo-image'>
+					<img src='img/logo.svg' alt='Банка полная любви' />
+				</div>
+				<h1 class='header__logo-title'>Банка полная любви</h1>
+			</a>
+
+			<nav class='header__nav'>
+				<ul>
+					<li>
+						<a href='#catalog' class='header__nav-link'>
+							Каталог
+						</a>
+					</li>
+
+					<li>
+						<a href='#form' class='header__nav-link'>
+							На заказ
+						</a>
+					</li>
+					<li>
+						<a href='#advantages' class='header__nav-link'>
+							Почему мы?
+						</a>
+					</li>
+					<li>
+						<a href='#delivery' class='header__nav-link'>
+							Доставка и оплата
+						</a>
+					</li>
+					<li>
+						<a href='#reviews' class='header__nav-link'>
+							Отзывы
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class='header__social'>
+				<div class='header__tel'>
+					<a href='tel:+70000000000' class='header__tel-link header__social-link header-icon'>
+						<img src='img/icons/call.svg' alt='Обратный звонок' />
+					</a>
+					<div class='header__tel-number'>
+						<a href='tel:+70000000000'>+7 (000) 000-00-00</a>
+					</div>
+					<p class='header__tel-subtitle'>Обратный звонок</p>
+				</div>
+
+				<a href='#' class='header__social-link header-icon'>
+					<img src='img/icons/telegram.svg' alt='Телеграм' />
+				</a>
+				<a href='#' class='header__social-link header-icon'>
+					<img src='img/icons/whatsapp.svg' alt='Вотсап' />
+				</a>
+			</div>
+		</div>
+		<div class='header__mobile'>
+			<div class='header__inner'>
+				<nav class='header__nav'>
+					<ul>
+						<li>
+							<a href='#catalog' class='header__nav-link'>
+								Каталог
+							</a>
+						</li>
+
+						<li>
+							<a href='#form' class='header__nav-link'>
+								На заказ
+							</a>
+						</li>
+						<li>
+							<a href='#advantages' class='header__nav-link'>
+								Почему мы?
+							</a>
+						</li>
+						<li>
+							<a href='#delivery' class='header__nav-link'>
+								Доставка и оплата
+							</a>
+						</li>
+						<li>
+							<a href='#reviews' class='header__nav-link'>
+								Отзывы
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class='header__social'>
+					<div class='header__tel'>
+						<a href='tel:+70000000000' class='header__tel-link header__social-link header-icon'>
+							<img src='img/icons/call.svg' alt='Обратный звонок' />
+						</a>
+						<div class='header__tel-number'>
+							<a href='tel:+70000000000'>+7 (000) 000-00-00</a>
+						</div>
+						<p class='header__tel-subtitle'>Обратный звонок</p>
+					</div>
+
+					<a href='#' class='header__social-link header-icon'>
+						<img src='img/icons/telegram.svg' alt='Телеграм' />
+					</a>
+					<a href='#' class='header__social-link header-icon'>
+						<img src='img/icons/whatsapp.svg' alt='Вотсап' />
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<main class='main'>
+		<section class='hero container'>
+			<div class='hero__info'>
+				<h2 class='hero__title'>
+					Оригинальный подарок для самого любимого, дорогого человека
+				</h2>
+				<h3 class='hero__title-red'>101 валентинка</h3>
+				<h4 class='hero__subtitle'>
+					Скажи все что хочешь сказать, о чем думаешь
+				</h4>
+				<ul class='hero__list'>
+					<li class='hero__list-item'>Ручная работа с любовью</li>
+					<li class='hero__list-item'>Безопасно и экологично</li>
+					<li class='hero__list-item'>Подарок к любому празднику</li>
+				</ul>
+				<div class='hero__buttons-container'>
+					<a href='#form' class='button button-fill'>
+						Заказать уже готовую
+					</a>
+					<button class='button button-outline' data-bs-toggle='modal' data-bs-target='#callbackModal'>
+						Собери свою банку
+					</button>
+				</div>
+			</div>
+			<div class='hero__image'>
+				<img src='img/hero-image.png' alt='Банка полная любви' />
+			</div>
+		</section>
+
+		<div class='overlay'>
+			<a class='overlay__cart overlay__button' data-bs-toggle='modal' data-bs-target='#cartModal'>
+				<div class='overlay__cart-image'>
+					<img src='img/icons/cart.svg' alt='Корзина' />
+				</div>
+
+				<span class='overlay__cart-count'>10</span>
+			</a>
+			<a href='#' class='overlay__scroll-top overlay__button' id='scroll-top'>
+				<img src='img/icons/triangle-red-up.svg' alt='Наверх' />
+			</a>
+		</div>
+
+		<section class='catalog container' id='catalog'>
+			<h2 class='catalog__title'>Каталог</h2>
+			<div class='catalog__list'>
+				<div class='catalog__item'>
+					<div class='catalog__item-image'>
+						<img src='img/catalog-1.png' alt='101 Валентинка для неё' loading='lazy' />
+					</div>
+					<div class='catalog__item-info'>
+						<h3 class='catalog__item-title'>101 Валентинка для неё</h3>
+						<div class='catalog__item-bottom'>
+							<div class='catalog__item-price'>
+								<div class='price-old'>
+									1000 <span>₽</span>
+								</div>
+								<div class='price-new'>
+									1000 <span>₽</span>
+								</div>
+							</div>
+							<button data-bs-toggle='modal' data-bs-target='#catalogModal' class='button button-fill'>
+								Заказать
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class='catalog__item'>
+					<div class='catalog__item-image'>
+						<img src='img/catalog-2.png' alt='101 Валентинка для Подруги' loading='lazy' />
+					</div>
+					<div class='catalog__item-info'>
+						<h3 class='catalog__item-title'>
+							101 Валентинка для Подруги
+						</h3>
+						<div class='catalog__item-bottom'>
+							<div class='catalog__item-price'>
+								<div class='price-old'>
+									1000 <span>₽</span>
+								</div>
+								<div class='price-new'>
+									1000 <span>₽</span>
+								</div>
+							</div>
+							<button data-bs-toggle='modal' data-bs-target='#catalogModal' class='button button-fill'>
+								Заказать
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class='catalog__item'>
+					<div class='catalog__item-image'>
+						<img src='img/catalog-3.png' alt='101 Валентинка для него' loading='lazy' />
+					</div>
+					<div class='catalog__item-info'>
+						<h3 class='catalog__item-title'>101 Валентинка для него</h3>
+						<div class='catalog__item-bottom'>
+							<div class='catalog__item-price'>
+								<div class='price-old'>
+									1000 <span>₽</span>
+								</div>
+								<div class='price-new'>
+									1000 <span>₽</span>
+								</div>
+							</div>
+							<button data-bs-toggle='modal' data-bs-target='#catalogModal' class='button button-fill'>
+								Заказать
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class='form' id='form'>
+			<div class='form__left'>
+				<h2 class='form__title'>
+					Собери свою <br />
+					<span class='form__title-accent'>Банку любви</span>
+				</h2>
+				<h3 class='form__subtitle'>
+					соберем для вас индивидуально с вашим участием
+				</h3>
+			</div>
+			<form class='form__right' action='POST'>
+				<div class='form__group'>
+					<label class='form__label form__label-fixed-width'>
+						Для кого
+					</label>
+					<input type='hidden' name='person-value' id='person-value' />
+					<div class='form__dropdown'>
+						<button type='button' class='form__dropdown-selected form__input' id='person-selected'>
+							Для любимой
+						</button>
+						<ul class='form__dropdown-list' id='person-list'>
+							<li data-value='Для любимой'>Для любимой</li>
+							<li data-value='Для подруги'>Для подруги</li>
+							<li data-value='Для любимого'>Для любимого</li>
+						</ul>
+					</div>
+				</div>
+				<div class='form__group'>
+					<label class='form__label form__label-fixed-width'>
+						На какой праздник
+					</label>
+					<input type='hidden' name='holiday-value' id='holiday-value' />
+					<div class='form__dropdown'>
+						<button type='button' class='form__dropdown-selected form__input' id='holiday-selected'>
+							День влюбленных
+						</button>
+						<ul class='form__dropdown-list' id='holiday-list'>
+							<li data-value='День влюбленных'>День влюбленных</li>
+							<li data-value='Восьмое марта'>Восьмое марта</li>
+						</ul>
+					</div>
+				</div>
+				<div class='form__group form__group-checkboxes'>
+					<div class='form__group'>
+						<input type='checkbox' name='my-choice' id='my-choice' />
+						<label for='my-choice' class='form__label'>
+							Валентинки напишу сам
+						</label>
+					</div>
+					<div class='form__group'>
+						<input type='checkbox' name='your-choice' id='your-choice' />
+						<label for='your-choice' class='form__label'>
+							Прислать мне валентинки на выбор
+						</label>
+					</div>
+				</div>
+				<div class='form__group'>
+					<label for='name' class='form__label form__label-fixed-width'>
+						Имя
+					</label>
+					<input type='text' name='name' class='form__input' required />
+				</div>
+
+				<div class='form__group form__group-contacts'>
+					<div class='form__group'>
+						<label for='tel' class='form__label form__label-fixed-width'>
+							Телефон
+						</label>
+						<input type='text' name='tel' class='form__input' placeholder='+7 (000) 000 00 00' required />
+					</div>
+					<div class='form__group'>
+						<label for='email' class='form__label form__label-email'>
+							Email
+						</label>
+						<input type='email' name='email' class='form__input' placeholder='Email@site.ru' required />
+					</div>
+				</div>
+				<div class='form__group form__group-submit'>
+					<div class='form__group form__group-privacy'>
+						<input type='checkbox' name='privacy' id='privacy' required defaultChecked />
+						<label for='privacy' class='form__label'>
+							Нажимая на кнопку даю согласие на обработку Персональных данных
+						</label>
+					</div>
+					<button type='submit' class='form__button button button-fill'>
+						Заказать
+					</button>
+				</div>
+			</form>
+		</section>
+
+		<section class='advantages container' id='advantages'>
+			<div class='advantages__image'>
+				<img src='img/advantages-image.png' alt='Почему мы?' loading='lazy' />
+			</div>
+			<div class='advantages__info'>
+				<h2 class='advantages__title'>Почему мы?</h2>
+				<ul class='advantages__list'>
+					<li class='advantages__item'>
+						<h3 class='advantages__item-title'>Производство</h3>
+						<p class='advantages__item-description'>
+							У нас собственное производство. Каждая баночка собирается в
+							ручную с любовью
+						</p>
+					</li>
+					<li class='advantages__item'>
+						<h3 class='advantages__item-title'>Качество</h3>
+						<p class='advantages__item-description'>
+							Высокий контроль качества на каждом этапе
+						</p>
+					</li>
+					<li class='advantages__item'>
+						<h3 class='advantages__item-title'>Безопасность</h3>
+						<p class='advantages__item-description'>
+							Используем качественные и безопасные материалы
+						</p>
+					</li>
+				</ul>
+				<p class='advantages__description'>
+					Благодарим вас за покупку, наша команда с искренней любовью,
+					аккуратностью, внимательностью собирает ваш заказ.
+				</p>
+			</div>
+		</section>
+
+		<section class='cards container' id='delivery'>
+			<a href='#' class='cards__item'>
+				<img src='img/cards-delivery.png' alt='Доставка' loading='lazy' />
+			</a>
+			<a href='#' class='cards__item'>
+				<img src='img/cards-pay.png' alt='Оплата' loading='lazy' />
+			</a>
+			<a href='#' class='cards__item'>
+				<img src='img/cards-discount.png' alt='Акции' loading='lazy' />
+			</a>
+			<a href='#' class='cards__item'>
+				<img src='img/cards-promotion.png' alt='Выгодные скидки' loading='lazy' />
+			</a>
+		</section>
+
+		<section class='reviews container' id='reviews'>
+			<h2 class='reviews__title'>Отзывы</h2>
+
+			<div class='reviews__swiper'>
+				<div class='swiper-wrapper'>
+					<div class='swiper-slide'>
+						<div class='reviews__item'>
+							<div class='reviews__item-left'>
+								<div class='reviews__item-stars'>
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+								</div>
+								<h3 class='reviews__item-author'>
+									Мередова Елена Григорьевна
+								</h3>
+								<p class='reviews__item-comment'>
+									Принимая во внимание показатели успешности, базовый вектор
+									развития, в своём классическом представлении, допускает
+									внедрение поставленных обществом задач. В рамках
+									спецификации современных стандартов, диаграммы связей,
+									инициированные исключительно синтетически, своевременно
+									верифицированы. Но предприниматели в сети.
+								</p>
+							</div>
+							<div class='reviews__item-right'>
+								<p class='reviews__item-type'>
+									Отзыв к баночке:
+									<span class='reviews__item-type-accent text-accent'>
+										Для него
+									</span>
+								</p>
+								<div class='reviews__item-swiper'>
+									<div class='swiper-wrapper'>
+										<div class='swiper-slide'>
+											<img src='img/jar.png' alt='' loading='lazy' />
+										</div>
+										<div class='swiper-slide'>
+											<img src='img/jar.png' alt='' loading='lazy' />
+										</div>
+										<div class='swiper-slide'>
+											<img src='img/jar.png' alt='' loading='lazy' />
+										</div>
+									</div>
+									<div class='swiper-button-prev reviews__item-swiper-button-prev'></div>
+									<div class='swiper-button-next reviews__item-swiper-button-next'></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='swiper-slide'>
+						<div class='reviews__item'>
+							<div class='reviews__item-left'>
+								<div class='reviews__item-stars'>
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+								</div>
+								<h3 class='reviews__item-author'>
+									Мередова Елена Григорьевна
+								</h3>
+								<p class='reviews__item-comment'>
+									Принимая во внимание показатели успешности, базовый вектор
+									развития, в своём классическом представлении, допускает
+									внедрение поставленных обществом задач. В рамках
+									спецификации современных стандартов, диаграммы связей,
+									инициированные исключительно синтетически, своевременно
+									верифицированы. Но предприниматели в сети.
+								</p>
+							</div>
+							<div class='reviews__item-right'>
+								<p class='reviews__item-type'>
+									Отзыв к баночке:
+									<span class='reviews__item-type-accent text-accent'>
+										Для него
+									</span>
+								</p>
+								<div class='reviews__item-swiper-container'>
+									<div class='reviews__item-swiper'>
+										<div class='swiper-wrapper'>
+											<div class='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
+											</div>
+											<div class='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
+											</div>
+											<div class='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
+											</div>
+										</div>
+										<div class='swiper-button-prev reviews__item-swiper-button-prev'></div>
+										<div class='swiper-button-next reviews__item-swiper-button-next'></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='swiper-slide'>
+						<div class='reviews__item'>
+							<div class='reviews__item-left'>
+								<div class='reviews__item-stars'>
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+									<img src='img/icons/star.svg' alt='' />
+								</div>
+								<h3 class='reviews__item-author'>
+									Мередова Елена Григорьевна
+								</h3>
+								<p class='reviews__item-comment'>
+									Принимая во внимание показатели успешности, базовый вектор
+									развития, в своём классическом представлении, допускает
+									внедрение поставленных обществом задач. В рамках
+									спецификации современных стандартов, диаграммы связей,
+									инициированные исключительно синтетически, своевременно
+									верифицированы. Но предприниматели в сети.
+								</p>
+							</div>
+							<div class='reviews__item-right'>
+								<p class='reviews__item-type'>
+									Отзыв к баночке:
+									<span class='reviews__item-type-accent text-accent'>
+										Для него
+									</span>
+								</p>
+								<div class='reviews__item-swiper-container'>
+									<div class='reviews__item-swiper'>
+										<div class='swiper-wrapper'>
+											<div class='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
+											</div>
+											<div class='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
+											</div>
+											<div class='swiper-slide'>
+												<img src='img/jar.png' alt='' loading='lazy' />
+											</div>
+										</div>
+										<div class='swiper-button-prev reviews__item-swiper-button-prev'></div>
+										<div class='swiper-button-next reviews__item-swiper-button-next'></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class='swiper-button-prev reviews__swiper-button-prev'></div>
+				<div class='swiper-button-next reviews__swiper-button-next'></div>
+			</div>
+		</section>
+
+		<section class='delivery container' id='delivery'>
+			<h2 class='delivery__title'>Мы продаем на</h2>
+			<div class='delivery__items'>
+				<div class='delivery__item'>
+					<img src='img/ozon.png' alt='Ozon' />
+				</div>
+				<div class='delivery__item'>
+					<img src='img/wildberries.png' alt='Wildberries' />
+				</div>
+				<div class='delivery__item'>
+					<img src='img/yandex-market.png' alt='Yandex-market' />
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class='footer'>
+		<div class='footer__inner'>
+			<p class='footer-text'>
+				2023. Банка полная любви. Все права защищены. Политика
+				конфиденциальности
+			</p>
+		</div>
+	</footer>
+
+	<!-- Modals-->
+	<div class='modal fade' id='callbackModal' tabindex='-1' aria-labelledby='callbackModalLabel' aria-hidden='true'>
+		<div class='modal-dialog modal-dialog-centered modal-lg'>
+			<div class='modal-content'>
+				<div class='modal-header'>
+					<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+				</div>
+				<div class='modal-body'>
+					<form class='callback-form' action='POST'>
+						<h1 class='modal-title' id='callbackModalLabel'>
+							Оставьте свои данные
+						</h1>
+						<h2 class='modal-subtitle'>
+							и мы перезвоним вам в ближайшее время
+						</h2>
+						<div class='form__group'>
+							<label for='callback-name' class='form__label form__label-fixed-width'>
+								Ваше имя
+							</label>
+							<input type='text' id='callback-name' name='callback-name' class='form__input' placeholder='Ваше имя'
+								required />
+						</div>
+						<div class='form__group'>
+							<label for='callback-tel' class='form__label form__label-fixed-width'>
+								Телефон
+							</label>
+							<input type='tel' id='callback-tel' name='callback-tel' class='form__input'
+								placeholder='+7 (000) 000 00 00' required />
+						</div>
+						<p class='modal-text'>
+							Нажимая на кнопку даю согласие на обработку
+							<br />
+							<span class='text-accent'> Персональных Данных</span>
+						</p>
+						<div class='form__group'>
+							<button type='submit' class='button button-fill'>
+								Перезвоните мне
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='modal fade' id='catalogModal' tabindex='-1' aria-labelledby='catalogModalLabel' aria-hidden='true'>
+		<div class='modal-dialog modal-dialog-centered modal-xl'>
+			<div class='modal-content'>
+				<div class='modal-header'>
+					<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+				</div>
+				<div class='modal-body'>
+					<div class='modal-left'>
+						<div class='catalog__swiper-preview'>
+							<div class='swiper-wrapper'>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+							</div>
+							<div class='swiper-button-prev catalog__swiper-preview-button-prev'></div>
+							<div class='swiper-button-next catalog__swiper-preview-button-next'></div>
+						</div>
+
+						<div class='catalog__swiper'>
+							<div class='swiper-wrapper'>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+								<div class='swiper-slide'>
+									<img src='/img/jar.png' alt='101 Валентинка - Для неё' />
+								</div>
+							</div>
+
+							<div class='swiper-button-prev catalog__swiper-button-prev'></div>
+							<div class='swiper-button-next catalog__swiper-button-next'></div>
+						</div>
+					</div>
+					<div class='modal-right'>
+						<h1 class='modal-title' id='catalogModalLabel'>
+							101 Валентинка - Для неё
+						</h1>
+						<div class='catalog__item-price'>
+							<div class='price-new'>
+								1000 <span>₽</span>
+							</div>
+							<div class='price-old'>
+								1000 <span>₽</span>
+							</div>
+						</div>
+						<h2 class='modal-subtitle'>Состав:</h2>
+						<ul class='list-custom'>
+							<li>
+								<span class='text-accent'>5</span> жвачек Love is…
+							</li>
+							<li>
+								<span class='text-accent'>3</span> шоколадные монеты
+							</li>
+							<li>
+								<span class='text-accent'>101</span> валентинка
+							</li>
+							<li>
+								<span class='text-accent'>5</span> поролоновых сердечек
+							</li>
+							<li>бумажная стружка</li>
+							<li>открытка</li>
+						</ul>
+						<form action='POST'>
+							<div class='form__group'>
+								<div class='catalog__counter counter'>
+									<input type='hidden' name='catalog-counter-dlya_nee' id='catalog__counter-dlya_nee' value='1'
+										class='counter-input' />
+									<button type='button' class='button counter-plus'></button>
+									<span class='counter-value'>1</span>
+									<button type='button' class='button counter-minus'></button>
+								</div>
+								<button type='submit' class='button button-fill'>
+									Заказать
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class='modal-footer'>
+					<p class='modal-text'>
+						Сложно сказать, почему некоторые особенности внутренней политики
+						представляют собой не что иное, как квинтэссенцию победы
+						маркетинга над разумом и должны быть заблокированы в рамках
+						своих собственных рациональных ограничений. В своём стремлении
+						улучшить пользовательский опыт мы упускаем, что сторонники
+						тоталитаризма в науке представляют собой не что иное, как
+						квинтэссенцию победы маркетинга над разумом и должны быть
+						представлены в исключительно положительном свете. В рамках
+						спецификации современных стандартов, независимые.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='modal fade' id='cartModal' tabindex='-1' aria-labelledby='cartModalLabel' aria-hidden='true'>
+		<div class='modal-dialog modal-dialog-centered modal-xl'>
+			<div class='modal-content'>
+				<div class='modal-header'>
+					<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+				</div>
+				<form action='POST' class='modal-body'>
+					<h1 class='modal-title' id='cartModalLabel'>
+						Оформление заказа
+					</h1>
+					<div class='cart__list'>
+						<div class='cart__item'>
+							<div class='cart__item-info'>
+								<div class='cart__item-group'>
+									<div class='cart__item-img'>
+										<img src='/img/jar.png' alt='101 Валентинка для Подруги' />
+									</div>
+									<div class='cart__item-title-price'>
+										<div class='cart__item-title'>
+											101 Валентинка для Подруги
+										</div>
+									</div>
+								</div>
+								<div class='cart__item-price'>
+									<div class='catalog__item-price'>
+										<div class='price-new'>
+											1000 <span>₽</span>
+										</div>
+										<div class='price-old'>
+											1000 <span>₽</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='cart__item-control'>
+								<div class='cart__item-counter counter'>
+									<input type='hidden' name='counter-dlya_podrugi' id='counter-dlya_podrugi' class='counter-input' />
+									<button type='button' class='button counter-plus'></button>
+									<div class='counter-value'>1</div>
+									<button type='button' class='button counter-minus'></button>
+								</div>
+								<button type='button' class='button cart__item-remove'></button>
+								<div class='cart__item-price-total'>
+									1000 <span>₽</span>
+								</div>
+							</div>
+						</div>
+						<div class='cart__item'>
+							<div class='cart__item-info'>
+								<div class='cart__item-group'>
+									<div class='cart__item-img'>
+										<img src='/img/jar.png' alt='101 Валентинка для Неё' />
+									</div>
+									<div class='cart__item-title-price'>
+										<div class='cart__item-title'>
+											101 Валентинка для Неё
+										</div>
+									</div>
+								</div>
+								<div class='cart__item-price'>
+									<div class='catalog__item-price'>
+										<div class='price-new'>
+											1000 <span>₽</span>
+										</div>
+										<div class='price-old'>
+											1000 <span>₽</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='cart__item-control'>
+								<div class='cart__item-counter counter'>
+									<input type='hidden' name='counter-dlya_nee' id='counter-dlya_nee' class='counter-input' />
+									<button type='button' class='button counter-plus'></button>
+									<div class='counter-value'>1</div>
+									<button type='button' class='button counter-minus'></button>
+								</div>
+								<button type='button' class='button cart__item-remove'></button>
+								<div class='cart__item-price-total'>
+									1000 <span>₽</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='cart__total'>
+						<div class="cart__total-group">
+							<form action='POST' class='cart__total-promotion'>
+								<label for='promotion' class='form__label'>
+									Промокод
+								</label>
+								<input type='text' name='promotion' id='promotion' required placeholder='Промокод'
+									class='cart__total-promotion-input form__input' />
+								<button type='submit' class='cart__total-promotion-button button button-fill'>
+									Применить
+								</button>
+							</form>
+						</div>
+
+						<div class='cart__total-group'>
+							<div class='cart__total-title'>Итоговая сумма:</div>
+							<div class='cart__total-price'>
+								10 000 <span>₽</span>
+							</div>
+							<div class='cart__total-discount'>
+								Скидка по промокоду - 100 ₽
+							</div>
+						</div>
+					</div>
+
+					<div class='cart__form'>
+						<h2 class='cart__form-title'>Оставьте свои данные</h2>
+						<h3 class='cart__form-subtitle'>
+							и мы перезвоним вам в ближайшее время
+						</h3>
+						<div class='cart__form-group'>
+							<div class='cart__form-contacts'>
+								<div class='form__group'>
+									<label class='form__label' for='cart-name'>
+										Ваше имя
+									</label>
+									<input type='text' name='cart-name' class='form__input' required />
+								</div>
+								<div class='form__group'>
+									<label for='cart-tel' class='form__label'>
+										Телефон
+									</label>
+									<input type='text' name='cart-tel' class='form__input' placeholder='+7 (000) 000 00 00' required />
+								</div>
+							</div>
+							<div class='cart__form-address'>
+								<label class='form__label'>Адрес доставки</label>
+								<div class='form__group'>
+									<input type='hidden' name='city-value' id='city-value' />
+									<div class='form__dropdown'>
+										<button type='button' class='form__dropdown-selected form__input' id='city-selected'>
+											Город
+										</button>
+										<ul class='form__dropdown-list' id='city-list'>
+											<li data-value='Москва'>Москва</li>
+											<li data-value='Санкт-Петербург'>Санкт-Петербург</li>
+											<li data-value='Самара'>Самара</li>
+										</ul>
+									</div>
+								</div>
+								<div class='form__group'>
+									<input type='hidden' name='street-value' id='street-value' />
+									<div class='form__dropdown'>
+										<button type='button' class='form__dropdown-selected form__input' id='street-selected'>
+											Улица
+										</button>
+										<ul class='form__dropdown-list' id='street-list'>
+											<li data-value='Улица'>Улица</li>
+											<li data-value='Ленина'>Ленина</li>
+											<li data-value='Пушкина'>Пушкина</li>
+											<li data-value='Тверская'>Тверская</li>
+										</ul>
+									</div>
+								</div>
+								<div class='form__group-three'>
+									<div class='form__group'>
+										<input type='hidden' name='house-value' id='house-value' />
+										<div class='form__dropdown'>
+											<button type='button' class='form__dropdown-selected form__input' id='house-selected'>
+												Дом/офис
+											</button>
+											<ul class='form__dropdown-list' id='house-list'>
+												<li data-value='Дом/офис'>Дом/офис</li>
+												<li data-value='1'>1</li>
+												<li data-value='2'>2</li>
+												<li data-value='3'>3</li>
+											</ul>
+										</div>
+									</div>
+									<div class='form__group'>
+										<input type='hidden' name='apartment-value' id='apartment-value' />
+										<div class='form__dropdown'>
+											<button type='button' class='form__dropdown-selected form__input' id='apartment-selected'>
+												Квартира
+											</button>
+											<ul class='form__dropdown-list' id='apartment-list'>
+												<li data-value='Квартира'>Квартира</li>
+												<li data-value='1'>1</li>
+												<li data-value='2'>2</li>
+												<li data-value='3'>3</li>
+											</ul>
+										</div>
+									</div>
+									<input type='text' name='doorphone' class='form__input' placeholder='Домофон' />
+								</div>
+							</div>
+						</div>
+						<div class='cart__form-group'>
+							<textarea name='extra-info' id='extra-info' class='form__input form__textarea'
+								placeholder='Дополнительная информация' cols='20' rows='3'></textarea>
+							<div class='form__group form__group-privacy'>
+								<label class='form__label'>
+									Нажимая на кнопку даю согласие на обработку
+									<span class='text-accent'>Персональных данных</span>
+								</label>
+								<button type='submit' class='button button-fill'>
+									Заказать
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class='cart__add'>
+						<h2 class='cart__add-title'>Добавить к заказу:</h2>
+						<div class='cart__list'>
+							<div class='cart__item'>
+								<div class='cart__item-info'>
+									<div class='cart__item-group'>
+										<input type='checkbox' name='item-add-dlya_podrugi' id='item-add-dlya_podrugi' checked />
+										<label for='item-add-dlya_podrugi' class='form__label'></label>
+										<div class='cart__item-img'>
+											<img src='/img/jar.png' alt='101 Валентинка для Подруги' />
+										</div>
+										<div class='cart__item-title-price'>
+											<div class='cart__item-title'>
+												101 Валентинка для Подруги
+											</div>
+										</div>
+									</div>
+									<div class='cart__item-price'>
+										<div class='catalog__item-price'>
+											<div class='price-new'>
+												1000 <span>₽</span>
+											</div>
+											<div class='price-old'>
+												1000 <span>₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='cart__item-control'>
+									<div class='cart__item-counter counter'>
+										<input type='hidden' name='counter-dlya_podrugi' id='counter-dlya_podrugi' value='1'
+											class='counter-input' />
+
+										<button type='button' class='button counter-plus'></button>
+										<div class='counter-value'>1</div>
+										<button type='button' class='button counter-minus'></button>
+									</div>
+									<div class='cart__item-price-total'>
+										1000 <span>₽</span>
+									</div>
+									<button type='button'
+										class='cart__item-delete button button-outline button-outline-red button-outline-small'>
+										Удалить
+									</button>
+								</div>
+							</div>
+							<div class='cart__item'>
+								<div class='cart__item-info'>
+									<div class='cart__item-group'>
+										<input type='checkbox' name='item-add-dlya_nee' id='item-add-dlya_nee' checked='' />
+										<label for='item-add-dlya_nee' class='form__label'></label>
+
+										<div class='cart__item-img'>
+											<img src='/img/jar.png' alt='101 Валентинка для Него' />
+										</div>
+										<div class='cart__item-title-price'>
+											<div class='cart__item-title'>
+												101 Валентинка для Него
+											</div>
+										</div>
+									</div>
+									<div class='cart__item-price'>
+										<div class='catalog__item-price'>
+											<div class='price-new'>
+												1000 <span>₽</span>
+											</div>
+											<div class='price-old'>
+												1000 <span>₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class='cart__item-control'>
+									<div class='cart__item-counter counter'>
+										<input type='hidden' name='counter-dlya_nego' id='counter-dlya_nego' value='1'
+											class='counter-input' />
+										<button type='button' class='button counter-plus'></button>
+										<div class='counter-value'>1</div>
+										<button type='button' class='button counter-minus'></button>
+									</div>
+									<div class='cart__item-price-total'>
+										1000 <span>₽</span>
+									</div>
+									<button type='button' class='cart__item-add button button-outline button-outline-small'>
+										Добавить к заказу
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
