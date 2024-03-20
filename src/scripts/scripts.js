@@ -32,32 +32,6 @@ function initializeDropdown(selectedId, listId, inputId) {
 	selected.addEventListener('touchmove', () => toggleDropdown('touchstart'))
 	list.addEventListener('click', handleListItemClick)
 	list.addEventListener('touchstart', handleListItemClick)
-
-	// // Fix touchscreen
-	// selected.addEventListener('touchstart', function () {
-	// 	// list.style.display = list.style.display === 'none' ? 'block' : 'none'
-	// 	// list.classList.toggle('active');
-	// 	selected.classList.toggle('active')
-	// })
-
-	// list.addEventListener('touchstart', function (e) {
-	// 	if (e.target.tagName === 'LI') {
-	// 		const selectedValue = e.target.getAttribute('data-value')
-	// 		selected.textContent = selectedValue
-	// 		input.value = selectedValue
-	// 		// list.style.display = 'none'
-	// 		// list.classList.toggle('active');
-	// 		selected.classList.remove('active')
-	// 	}
-	// })
-
-	// document.addEventListener('touchstart', function (e) {
-	// 	if (!selected.contains(e.target)) {
-	// 		// list.style.display = 'none'
-	// 		// list.classList.toggle('active');
-	// 		selected.classList.remove('active')
-	// 	}
-	// })
 }
 
 function initializeCounters() {
@@ -120,12 +94,12 @@ window.onload = function () {
 	initializeDropdown('apartment-selected', 'apartment-list', 'apartment-value')
 
 	// Modal counters
-	
+
 	initializeCounters()
 
 	// Cart modal
-	
-	movePriceElement(	)
+
+	movePriceElement()
 	window.addEventListener('resize', movePriceElement)
 
 	// Header burger button
