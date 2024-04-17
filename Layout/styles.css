@@ -42,8 +42,7 @@
 	font-family: 'Gilroy';
 	src: url('fonts/Gilroy/Gilroy-ThinItalic.eot');
 	src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
-		url('fonts/Gilroy/Gilroy-ThinItalic.eot?#iefix')
-			format('embedded-opentype'),
+		url('fonts/Gilroy/Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
 		url('fonts/Gilroy/Gilroy-ThinItalic.woff') format('woff'),
 		url('fonts/Gilroy/Gilroy-ThinItalic.ttf') format('truetype');
 	font-weight: 100;
@@ -64,8 +63,7 @@
 	font-family: 'Gilroy';
 	src: url('fonts/Gilroy/Gilroy-BoldItalic.eot');
 	src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
-		url('fonts/Gilroy/Gilroy-BoldItalic.eot?#iefix')
-			format('embedded-opentype'),
+		url('fonts/Gilroy/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
 		url('fonts/Gilroy/Gilroy-BoldItalic.woff') format('woff'),
 		url('fonts/Gilroy/Gilroy-BoldItalic.ttf') format('truetype');
 	font-weight: bold;
@@ -181,8 +179,7 @@
 	font-family: 'Gilroy';
 	src: url('fonts/Gilroy/Gilroy-UltraLight.eot');
 	src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
-		url('fonts/Gilroy/Gilroy-UltraLight.eot?#iefix')
-			format('embedded-opentype'),
+		url('fonts/Gilroy/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
 		url('fonts/Gilroy/Gilroy-UltraLight.woff') format('woff'),
 		url('fonts/Gilroy/Gilroy-UltraLight.ttf') format('truetype');
 	font-weight: 200;
@@ -726,15 +723,15 @@ input[type='checkbox']:focus-visible + label::before {
 	justify-content: center;
 }
 
-#catalogModal .modal-body {
+.catalog-modal .modal-body {
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
 }
-#catalogModal .modal-title {
+.catalog-modal .modal-title {
 	margin-bottom: 30px;
 }
-#catalogModal .modal-subtitle {
+.catalog-modal .modal-subtitle {
 	color: var(--gray-700);
 	font-size: 25px;
 	font-weight: 600;
@@ -742,7 +739,7 @@ input[type='checkbox']:focus-visible + label::before {
 	text-align: left;
 	margin-bottom: 10px;
 }
-#catalogModal .list-custom {
+.catalog-modal .list-custom {
 	color: var(--gray-700);
 	font-size: 20px;
 	font-weight: 400;
@@ -750,48 +747,48 @@ input[type='checkbox']:focus-visible + label::before {
 	letter-spacing: 0.6px;
 	margin-bottom: 30px;
 }
-#catalogModal .modal-left {
+.catalog-modal .modal-left {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 50%;
 }
-#catalogModal .modal-right {
+.catalog-modal .modal-right {
 	width: 50%;
 }
-#catalogModal .catalog__item-price {
+.catalog-modal .catalog__item-price {
 	align-items: flex-start;
 	flex-direction: row;
 	gap: 10px;
 	margin-bottom: 15px;
 }
-#catalogModal .catalog__item-price .price-new {
+.catalog-modal .catalog__item-price .price-new {
 	font-size: clamp(24px, 4vw, 34px);
 }
-#catalogModal .catalog__item-price .price-old {
+.catalog-modal .catalog__item-price .price-old {
 	font-size: clamp(16px, 2vw, 20px);
 }
-#catalogModal .catalog__swiper,
-#catalogModal .catalog__swiper-preview {
+.catalog-modal .catalog__swiper,
+.catalog-modal .catalog__swiper-preview {
 	position: relative;
 	max-width: 100%;
 	overflow: hidden;
 	padding-inline: 15px;
 }
-#catalogModal .catalog__swiper-button-prev,
-#catalogModal .catalog__swiper-preview-button-prev {
+.catalog-modal .catalog__swiper-button-prev,
+.catalog-modal .catalog__swiper-preview-button-prev {
 	background: url('img/icons/left-red.svg') no-repeat center;
 }
-#catalogModal .catalog__swiper-button-next,
-#catalogModal .catalog__swiper-preview-button-next {
+.catalog-modal .catalog__swiper-button-next,
+.catalog-modal .catalog__swiper-preview-button-next {
 	background: url('img/icons/right-red.svg') no-repeat center;
 }
-#catalogModal .catalog__swiper .swiper-slide img,
-#catalogModal .catalog__swiper-preview .swiper-slide img {
+.catalog-modal .catalog__swiper .swiper-slide img,
+.catalog-modal .catalog__swiper-preview .swiper-slide img {
 	margin-inline: auto;
 }
-#catalogModal .form__group {
+.catalog-modal .form__group {
 	justify-content: flex-end;
 	gap: 30px;
 }
@@ -892,6 +889,7 @@ input[type='checkbox']:focus-visible + label::before {
 	font-weight: 700;
 	line-height: normal;
 	white-space: nowrap;
+	min-width: 90px;
 }
 #cartModal .cart__total {
 	display: flex;
@@ -904,6 +902,8 @@ input[type='checkbox']:focus-visible + label::before {
 	display: flex;
 	align-items: center;
 	gap: 15px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 #cartModal .cart__total .form__label {
 	font-size: 16px;
@@ -1067,26 +1067,26 @@ input[type='checkbox']:focus-visible + label::before {
 	.modal-content {
 		padding: 10px 15px 20px 15px;
 	}
-	#catalogModal .modal-body {
+	.catalog-modal .modal-body {
 		flex-direction: column;
 		align-items: center;
 	}
-	#catalogModal .modal-right {
+	.catalog-modal .modal-right {
 		width: 100%;
 	}
-	#catalogModal .modal-left {
+	.catalog-modal .modal-left {
 		width: 100%;
 	}
-	#catalogModal .modal-title {
+	.catalog-modal .modal-title {
 		margin-bottom: 15px;
 	}
-	#catalogModal .catalog__item-price {
+	.catalog-modal .catalog__item-price {
 		justify-content: center;
 	}
-	#catalogModal .catalog__swiper {
+	.catalog-modal .catalog__swiper {
 		display: none;
 	}
-	#catalogModal .form__group {
+	.catalog-modal .form__group {
 		justify-content: center;
 		gap: 15px;
 	}
